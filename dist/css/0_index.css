@@ -1,0 +1,70 @@
+* {
+  background-color: pink;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bolder;
+}
+
+#starting-modal {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  margin-top: 12%;
+  margin-left: 25%;
+
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#starting-modal > h1, p, span {
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+#starting-modal > p {
+  margin-top: 1%;
+}
+
+#starting-modal > h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  padding: 5%;
+  padding-bottom: 2%;
+}
+
+h1 > i {
+  background-color: transparent;
+  color: gold;
+  font-size: 1rem;
+  transform: rotate(15deg);
+  position: relative;
+  bottom: 10px;
+}
+
+hr {
+  border: solid 0px pink;
+  width: 96%;
+  height: 1px;
+}
+
+#starting-modal-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 25%;
+  padding: 0.75%;
+  background-color: gold;
+  border: gold;
+  margin-top: 2%;
+  border-radius: 5%;
+}
+
+#starting-modal-button :visited {
+  cursor: pointer;
+  border: rgb(255, 175, 189);
+}
