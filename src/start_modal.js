@@ -1,8 +1,7 @@
 const startingModalButton = document.getElementById('starting-modal-button');
-// Set color to red
-startingModalButton.style.color = 'red';
+const startingModal = document.getElementById('starting-modal');
 
-function hideStartingModal (e) {
-  const startingModal = document.getElementById('starting-modal');
-  startingModel.style.display = "none";
-}
+startingModalButton.addEventListener('click', (e) => {
+  startingModal.style.display = "none";
+  document.body.style.backgroundColor = "white";
+})
