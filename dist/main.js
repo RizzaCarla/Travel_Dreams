@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map */ \"./src/map.js\");\n/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_map__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _passport__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./passport */ \"./src/passport.js\");\n/* harmony import */ var _passport__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_passport__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _review__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./review */ \"./src/review.js\");\n/* harmony import */ var _review__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_review__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _start_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./start_modal */ \"./src/start_modal.js\");\n/* harmony import */ var _start_modal__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_start_modal__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _tourist_spots__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tourist_spots */ \"./src/tourist_spots.js\");\n/* harmony import */ var _tourist_spots__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_tourist_spots__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map */ \"./src/map.js\");\n/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_map__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _passport__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./passport */ \"./src/passport.js\");\n/* harmony import */ var _passport__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_passport__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _review__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./review */ \"./src/review.js\");\n/* harmony import */ var _review__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_review__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _start_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./start_modal */ \"./src/start_modal.js\");\n/* harmony import */ var _start_modal__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_start_modal__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _tourist_spots__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tourist_spots */ \"./src/tourist_spots.js\");\n/* harmony import */ var _tourist_spots__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_tourist_spots__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _map
   \********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://Travel_Dreams/./src/map.js?");
+eval("const mapOfJapan = document.getElementById('map-of-japan');\nconst mapImage = document.getElementById('map-image');\n\nmapOfJapan.addEventListener('loadstart', () => {\n  mapOfJapan.style.visibility = \"hidden\";\n  mapOfJapan.style.display = \"none\";\n})\n\n//# sourceURL=webpack://Travel_Dreams/./src/map.js?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("\n\n//# sourceURL=webpack://Travel_Dreams/./src/review.js?");
   \****************************/
 /***/ (() => {
 
-eval("const startingModalButton = document.getElementById('starting-modal-button');\nconst startingModal = document.getElementById('starting-modal');\n\nstartingModalButton.addEventListener('click', (e) => {\n  startingModal.style.display = \"none\";\n  document.body.style.backgroundColor = \"white\";\n})\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/start_modal.js?");
+eval("const startingModalButton = document.getElementById('starting-modal-button');\nconst startingModal = document.getElementById('starting-modal');\nconst mapOfJapan = document.getElementById('map-of-japan');\n\nstartingModalButton.addEventListener('click', (e) => {\n  startingModal.style.display = \"none\";\n  document.body.style.backgroundColor = \"white\";\n  mapOfJapan.style.display = \"block\";\n})\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/start_modal.js?");
 
 /***/ }),
 

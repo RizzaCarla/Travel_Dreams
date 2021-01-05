@@ -5,18 +5,20 @@ body {
 }
 
 #starting-modal {
+  position: fixed;
   display: flex;
   flex-direction: column;
-
+  
   text-align: center;
   padding: 20px;
-  width: 50%;
+  width: 852px;
   margin-top: 12%;
   margin-left: 25%;
-
+  
   border-radius: 10px;
   border: 1px solid white;
   background-color: white;
+  display: none;
 }
 
 #starting-modal > h1, p, span {
