@@ -66,7 +66,7 @@ eval("\n\n//# sourceURL=webpack://Travel_Dreams/./src/review.js?");
   \****************************/
 /***/ (() => {
 
-eval("const startingModalButton = document.getElementById('starting-modal-button');\n// Set color to red\nstartingModalButton.style.color = 'red';\n\nfunction hideStartingModal (e) {\n  const startingModal = document.getElementById('starting-modal');\n  startingModel.style.display = \"none\";\n}\n\n//# sourceURL=webpack://Travel_Dreams/./src/start_modal.js?");
+eval("const startingModalButton = document.getElementById('starting-modal-button');\nconst startingModal = document.getElementById('starting-modal');\n\nstartingModalButton.addEventListener('click', (e) => {\n  startingModal.style.display = \"none\";\n  document.body.style.backgroundColor = \"white\";\n})\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/start_modal.js?");
 
 /***/ }),
 
