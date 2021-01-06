@@ -3,11 +3,9 @@
   left: 0;
   width: 50%;
   height: auto;
-  /* border: 7px solid rgb(253, 243, 243); */
   background-color: rgb(253, 243, 243);
-  /* margin-left: 2.5px;
-  margin-top: 2.5px;
-  border-radius: 3%; */
+  border: 5px solid rgb(255, 255, 255);
+  display: none;
 }
 
 #hokkaido-image {

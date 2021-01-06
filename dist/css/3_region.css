@@ -1,3 +1,8 @@
 #region-info {
   right: 0;
 }
+
+#region-info > h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+}

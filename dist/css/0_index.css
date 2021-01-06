@@ -1,7 +1,12 @@
-* {
-  /* padding: 0;
+body {
+  padding: 0;
   margin: 0;
-  box-sizing: border-box; */
+  box-sizing: border-box;
+  background-color: rgb(253, 243, 243);
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
 }
 
 .region-page {

@@ -1,23 +1,17 @@
-body {
-  background-color: pink;
-  font-family: 'Philosopher', sans-serif;
-  font-weight: bolder;
-}
-
 #starting-modal {
   display: flex;
   flex-direction: column;
   
   text-align: center;
-  padding: 20px;
+  padding: 2%;
   width: 50%;
   margin-top: 12%;
-  margin-left: 25%;
+  margin-left: 23%;
   
-  border-radius: 10px;
-  border: 1px solid white;
-  background-color: white;
-  display: none;
+  border-radius: 5px;
+  /* border: 1px solid white; */
+  background-color: pink;
+  /* display: none; */
 }
 
 #starting-modal > h1, p, span {
@@ -48,7 +42,7 @@ h1 > i {
 }
 
 hr {
-  border: solid 0px pink;
+  border: solid 1px pink;
   width: 96%;
   height: 1px;
 }
@@ -64,8 +58,8 @@ hr {
   margin-top: 2%;
   border-radius: 5%;
 }
-
-#starting-modal-button :visited {
+/* 
+#starting-modal-button :hover {
   cursor: pointer;
   border: rgb(255, 175, 189);
-}
+} */
