@@ -5,13 +5,12 @@ body {
 }
 
 #starting-modal {
-  position: fixed;
   display: flex;
   flex-direction: column;
   
   text-align: center;
   padding: 20px;
-  width: 852px;
+  width: 50%;
   margin-top: 12%;
   margin-left: 25%;
   
