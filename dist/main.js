@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _map
   \********************/
 /***/ (() => {
 
-eval("const mapOfJapan = document.getElementById('map-of-japan');\nconst mapImage = document.getElementById('map-image');\n\nmapOfJapan.addEventListener('loadstart', () => {\n  mapOfJapan.style.visibility = \"hidden\";\n  mapOfJapan.style.display = \"none\";\n})\n\n//# sourceURL=webpack://Travel_Dreams/./src/map.js?");
+eval("// window.addEventListener(\"scroll\", () => {\n//   const userScrolled = window.scrollY;\n//   console.log(userScrolled)\n// })\n\nwindow.onscroll = function () { myFunction() };\nconst mapOfJapan = document.getElementById(\"map-of-japan\");\nconst sticky = mapOfJapan.offsetTop;\nfunction myFunction() {\n  if (window.pageYOffset >= sticky) {\n    navbar.classList.add(\"sticky\")\n  } else {\n    navbar.classList.remove(\"sticky\");\n  }\n}\n\n//# sourceURL=webpack://Travel_Dreams/./src/map.js?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("\n\n//# sourceURL=webpack://Travel_Dreams/./src/review.js?");
   \****************************/
 /***/ (() => {
 
-eval("const startingModalButton = document.getElementById('starting-modal-button');\nconst startingModal = document.getElementById('starting-modal');\nconst mapOfJapan = document.getElementById('map-of-japan');\n\nstartingModalButton.addEventListener('click', (e) => {\n  startingModal.style.display = \"none\";\n  document.body.style.backgroundColor = \"white\";\n  mapOfJapan.style.display = \"block\";\n})\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/start_modal.js?");
+eval("const startingModalButton = document.getElementById('starting-modal-button');\nconst startingModal = document.getElementById('starting-modal');\nconst mapOfJapan = document.getElementById('map-of-japan');\nconst regionInfo = document.getElementById('region-info')\n\nstartingModalButton.addEventListener('click', (e) => {\n  startingModal.style.display = \"none\";\n  document.body.style.backgroundColor = \"white\";\n  mapOfJapan.style.display = \"block\";\n  regionInfo.style.display = \"block\";\n})\n\n\n//# sourceURL=webpack://Travel_Dreams/./src/start_modal.js?");
 
 /***/ }),
 

@@ -1,69 +1,85 @@
 #map-of-japan {
-  position: relative;
+  position: fixed;
   left: 0;
   width: 50%;
-  height: auto;
+  height: 100%;
   background-color: rgb(253, 243, 243);
-  border: 5px solid rgb(255, 255, 255);
+  border: 5.6px solid rgb(253, 243, 243);
   display: none;
 }
 
-#hokkaido-image {
+#map-of-japan h1 {
+ font-weight: bold;
+ margin: 10px;
+ font-size: 1.5rem;
+ color: rgb(12, 12, 63);
+}
+
+#hokkaido-region {
   position: relative;
   width: 30%;
   left: 62%;
   top: 0%;
 }
 
-#tohoku-image {
+#tohoku-region {
   position: relative;
   width: 27%;
-  left: 23%;
-  top: 24.3%;
+  left: 23.2%;
+  top: 23.4%;
+  transform: rotate(1deg);
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }
 
-#chubu-image {
+#chubu-region {
   position: relative;
   width: 23%;
-  left: 42.8%;
+  left: 42.6%;
   top: 10.2%;
   transform: rotate(0.8deg);
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }
 
-#kanto-image {
+#kanto-region {
   position: relative;
   width: 28%;
-  left: -10.28%;
-  top: 51.3%;
+  left: -9.9%;
+  top: 49.3%;
   transform: rotate(0.5deg);
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }
 
-#kansai-image {
+#kansai-region {
   position: relative;
   width: 15%;
-  left: 12.8%;
+  left: 12.7%;
   top: 16.2%;
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }
 
-#chugoku-image {
+#chugoku-region {
   position: relative;
   width: 20%;
-  left: -19.5%;
-  top: 14%;
+  left: -19.4%;
+  top: 14.1%;
   transform: rotate(0.5deg);
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }
 
-#shikoku-image {
+#shikoku-region {
   position: relative;
   width: 16%;
   left: -36.5%;
   top: 22.5%;
   transform: rotate(4deg);
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }
 
-#kyushu-image {
+#kyushu-region {
   position: relative;
   width: 33%;
-  left: 0%;
-  top: -1%;
+  left: -0.5%;
+  top: 0%;
+  transform: rotate(3deg);
+  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
 }

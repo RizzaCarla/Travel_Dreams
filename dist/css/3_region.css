@@ -1,8 +1,51 @@
 #region-info {
   right: 0;
+  width: 50%;
+  height: auto;
+  display: none;
+  margin-left: 51.5%;
 }
 
-#region-info > h1 {
+#hokkaido-info, 
+#tohoku-info, 
+#kanto-info, 
+#chubu-info,
+#kansai-info,
+#chugoku-info,
+#shikoku-info,
+#kyushu-info {
+  position: relative;
+  border: 1px solid pink;
+  margin: 5px;
+  padding: 5px;
+  width: 95%;
+  height: 12.9%;
+}
+
+#region-info img {
+  object-fit: cover;
+  height: 57.5%;
+  width: 96%;
+}
+
+#region-info h1 {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Alegreya";
+  color: rgb(12, 12, 63);
+}
+
+#region-info p {
+  margin: 5px;
+}
+
+#region-info button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: gold;
+  border: 1.5px solid	gold;
+  border-radius: 5%;
+  padding: 5px 10px 5px 10px;
 }

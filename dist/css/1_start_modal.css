@@ -30,11 +30,12 @@
   font-family: 'Pacifico', cursive;
   padding: 5%;
   padding-bottom: 2%;
+  color: rgb(12, 12, 63);
 }
 
 h1 > i {
   background-color: transparent;
-  color: gold;
+  color: rgb(12, 12, 63);
   font-size: 1rem;
   transform: rotate(15deg);
   position: relative;
@@ -54,7 +55,7 @@ hr {
   width: 25%;
   padding: 0.75%;
   background-color: gold;
-  border: gold;
+  border: 1.5px solid	gold;
   margin-top: 2%;
   border-radius: 5%;
 }
