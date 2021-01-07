@@ -1,4 +1,5 @@
 import map from './map';
+import regionInfo from './region-info'
 import navbar from './navbar';
 import passport from './passport';
 import review from './review';

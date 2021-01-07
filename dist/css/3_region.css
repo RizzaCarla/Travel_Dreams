@@ -20,6 +20,15 @@
   padding: 5px;
   width: 95%;
   height: 12.9%;
+  visibility: hidden;
+}
+
+.appear {
+  visibility: visible;
+}
+
+.disappear {
+  visibility: hidden;
 }
 
 #region-info img {

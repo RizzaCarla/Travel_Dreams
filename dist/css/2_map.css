@@ -1,4 +1,4 @@
-#map-of-japan {
+.map-of-japan {
   position: fixed;
   left: 0;
   width: 50%;
@@ -8,11 +8,11 @@
   display: none;
 }
 
-#map-of-japan h1 {
- font-weight: bold;
- margin: 10px;
- font-size: 1.5rem;
- color: rgb(12, 12, 63);
+.map-of-japan h1 {
+  font-weight: bold;
+  margin: 10px;
+  font-size: 1.5rem;
+  color: rgb(12, 12, 63);
 }
 
 #hokkaido-region {
@@ -28,42 +28,41 @@
   left: 23.2%;
   top: 23.4%;
   transform: rotate(1deg);
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  filter: opacity(55%);
 }
 
 #chubu-region {
   position: relative;
   width: 23%;
   left: 42.6%;
-  top: 10.2%;
+  top: 9.95%;
   transform: rotate(0.8deg);
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  filter: opacity(55%);
 }
 
 #kanto-region {
   position: relative;
   width: 28%;
   left: -9.9%;
-  top: 49.3%;
-  transform: rotate(0.5deg);
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  top: 49.7%;
+  filter: opacity(55%);
 }
 
 #kansai-region {
   position: relative;
   width: 15%;
   left: 12.7%;
-  top: 16.2%;
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  top: 16%;
+  filter: opacity(55%);
 }
 
 #chugoku-region {
   position: relative;
   width: 20%;
-  left: -19.4%;
-  top: 14.1%;
+  left: -19.3%;
+  top: 13.9%;
   transform: rotate(0.5deg);
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  filter: opacity(55%);
 }
 
 #shikoku-region {
@@ -72,7 +71,7 @@
   left: -36.5%;
   top: 22.5%;
   transform: rotate(4deg);
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  filter: opacity(55%);
 }
 
 #kyushu-region {
@@ -81,5 +80,5 @@
   left: -0.5%;
   top: 0%;
   transform: rotate(3deg);
-  filter: grayscale(0%) sepia(0%) saturate(80%) opacity(77%) brightness(100%) contrast(50%);
+  filter: opacity(55%);
 }

@@ -1,11 +1,13 @@
 const startingModalButton = document.getElementById('starting-modal-button');
 const startingModal = document.getElementById('starting-modal');
-const mapOfJapan = document.getElementById('map-of-japan');
+const mapOfJapan = document.getElementsByClassName('map-of-japan');
 const regionInfo = document.getElementById('region-info')
 
 startingModalButton.addEventListener('click', (e) => {
   startingModal.style.display = "none";
   document.body.style.backgroundColor = "white";
-  mapOfJapan.style.display = "block";
+  for (let i = 0; i < mapOfJapan.length; i++) {
+    mapOfJapan[i].style.display = "block";
+  }
   regionInfo.style.display = "block";
 })
