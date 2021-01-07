@@ -15,12 +15,17 @@
 #shikoku-info,
 #kyushu-info {
   position: relative;
-  border: 1px solid pink;
-  margin: 5px;
-  padding: 5px;
-  width: 95%;
+  padding: 5px 15px 5px 15px;
   height: 12.9%;
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5%;
+  margin-right: 5.5%;
+}
+
+#hokkaido-info {
+  visibility: visible;
 }
 
 .appear {
@@ -34,19 +39,32 @@
 #region-info img {
   object-fit: cover;
   height: 57.5%;
-  width: 96%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  /* border-radius: 2%; */
 }
 
 #region-info h1 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
-  font-family: "Alegreya";
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif; 
   color: rgb(12, 12, 63);
+  padding: 2%;
+  /* text-decoration: underline; */
 }
 
 #region-info p {
   margin: 5px;
+  text-align: justify;
+  padding: 2%;
+  margin-bottom: 10%;
 }
 
 #region-info button {
