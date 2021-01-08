@@ -4,16 +4,18 @@
   width: 50%;
   height: 100%;
   background-color: rgb(253, 243, 243);
-  border: 5.6px solid rgb(253, 243, 243);
+  border: 5px solid rgb(253, 243, 243);
   display: none;
-  margin: 0px;
+  margin-top: -16px;
+  margin-bottom: 16px;
 }
 
 .map-of-japan h1 {
   font-weight: bold;
-  margin: 10px;
+  margin-left: 10px;
   font-size: 1.5rem;
   color: rgb(12, 12, 63);
+  padding-top: 5px;
 }
 
 #hokkaido-region {
@@ -36,17 +38,18 @@
   position: relative;
   width: 23%;
   left: 42.6%;
-  top: 9.95%;
+  top: 9.9%;
   transform: rotate(0.8deg);
   filter: opacity(55%);
 }
 
 #kanto-region {
   position: relative;
-  width: 28%;
-  left: -9.9%;
-  top: 49.7%;
+  width: 27.3%;
+  left: -9.7%;
+  top: 48.95%;
   filter: opacity(55%);
+  transform: rotate(0.5deg)
 }
 
 #kansai-region {
@@ -79,7 +82,8 @@
   position: relative;
   width: 33%;
   left: -0.5%;
-  top: 0%;
+  top: -0.8%;
   transform: rotate(3deg);
   filter: opacity(55%);
+  margin-bottom: 20px;
 }

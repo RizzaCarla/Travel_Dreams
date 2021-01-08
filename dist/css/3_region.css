@@ -3,7 +3,8 @@
   width: 50%;
   height: auto;
   display: none;
-  margin-left: 51.5%;
+  margin-left: 50%;
+  
 }
 
 #hokkaido-info, 
@@ -43,7 +44,6 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  /* border-radius: 2%; */
 }
 
 #region-info h1 {

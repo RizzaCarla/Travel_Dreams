@@ -1,0 +1,10 @@
+#notebook {
+  left: 0;
+  position: fixed;
+  display: none;
+}
+
+#notebook1, #notebook2 {
+  height: 20%;
+  width: 20%;
+}

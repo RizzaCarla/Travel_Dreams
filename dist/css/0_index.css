@@ -15,6 +15,13 @@ body {
 
 .region-page {
   width: 100%;
+  margin: 0px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+#itinerary {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
