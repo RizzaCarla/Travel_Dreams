@@ -9,6 +9,9 @@
   <link rel='stylesheet' href="./dist/css/1_start_modal.css">
   <link rel='stylesheet' href="./dist/css/2_map.css">
   <link rel='stylesheet' href="./dist/css/3_region.css">
+  <link rel='stylesheet' href="./dist/css/4_prefectures.css">
+  <link rel='stylesheet' href="./dist/css/5_t-spots.css">
+  <link rel='stylesheet' href="./dist/css/6_notebook.css">
   <link rel="icon" href="./src/Images/Travel_Dreams.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -28,113 +31,846 @@
     <h1>Travel Dreams
       <i class="fas fa-star"></i>
     </h1>
-    <hr></hr>
-    <p>Thank you for flying with Japan Airlines! You will be landing in Tokyo, Japan.</p>
+    <div id="starting-modal-line"></div>
+    <p>Thank you for flying with Japan Airlines! You will be landing in Narita International Airport shortly.</p>
     <button id="starting-modal-button">Enter Airport</button>
   </div>
   
-  <div class="region-page">
+  <div id="region-page">
     <!-- display flex, flex direction -->
     <div class="map-of-japan">
-        <h1 id="map-select">Please Select a Region:</h1>
-        <img id="hokkaido-region" src="./src/Images/hokkaido.png"></img>
-        <img id="tohoku-region" src="./src/Images/tohokunew.png"></img>
-        <img id="kanto-region" src="./src/Images/kantonew.png"></img>
-        <img id="chubu-region" src="./src/Images/chubu.png"></img>
-        <img id="kansai-region" src="./src/Images/kansai.png"></img>
-        <img id="chugoku-region" src="./src/Images/chugoku.png"></img>
-        <img id="shikoku-region" src="./src/Images/shikoku.png"></img>
-        <img id="kyushu-region" src="./src/Images/kyushu.png"></img>
-      </div>
+      <h1 id="map-select">Please Select a Region:</h1>
+      <img id="hokkaido-region" src="./src/Images/hokkaido.png"></img>
+      <img id="tohoku-region" src="./src/Images/tohokunew.png"></img>
+      <img id="kanto-region" src="./src/Images/kantonew.png"></img>
+      <img id="chubu-region" src="./src/Images/chubu.png"></img>
+      <img id="kansai-region" src="./src/Images/kansai.png"></img>
+      <img id="chugoku-region" src="./src/Images/chugoku.png"></img>
+      <img id="shikoku-region" src="./src/Images/shikoku.png"></img>
+      <img id="kyushu-region" src="./src/Images/kyushu.png"></img>
+    </div>
       
-      <div id='region-info'>
-        <div id="hokkaido-info">
-          <h1>Hokkaido</h1>
-          <img id="hokkaido-info-image" src="./src/Images/1_flower-fields-biei-hokkaido-japan.jpg"></img>
-          <p>With its unspoiled nature, Hokkaido attracts many outdoor lovers, 
-            including skiers and snowboarders in the colder
-            seasons and hikers, cyclists and campers from June to September.
-            Hokkaido features only one prefecture of the same name, and its major cities include Sapporo, 
-            Asahikawa and Hakodate.
-          </p>
-          <button>Fly to Hokkaido</button>
+    <div id='region-info'>
+      <div id="hokkaido-info">
+        <h1>Hokkaido</h1>
+        <img id="hokkaido-info-image" src="./src/Images/1_flower-fields-biei-hokkaido-japan.jpg"></img>
+        <p>With its unspoiled nature, Hokkaido attracts many outdoor lovers, 
+          including skiers and snowboarders in the colder
+          seasons and hikers, cyclists and campers from June to September.
+          Hokkaido features only one prefecture of the same name, and its major cities include Sapporo, 
+          Asahikawa and Hakodate.
+        </p>
+        <button id='hokkaido-region-button'>Fly to Hokkaido</button>
+      </div>
+      <div id="tohoku-info">
+        <h1>Tohoku</h1>
+        <img id="tohoku-info-image" src="./src/Images/2_Yamagata-Tohoku-Japan-scenery.jpg"></img>
+        <p>Tohoku, in the north of Honshu islands, is one of Japan’s most scenic regions. 
+          Known for its mountains and great skiing spots, lakes, hot springs, castles and samurai residences. 
+          Its capital, Sendai, is known as the “city of trees” and is
+          home to one of the most popular summer festivals in Japan.
+          Prefectures: Akita, Aomori, Fukushima, Iwate, Miyagi, and Yamagata.
+        </p>
+        <button id='tohoku-region-button'>Fly to Tohoku</button>
+      </div>
+      <div id="kanto-info">
+        <h1>Kanto</h1>
+        <img id="kanto-info-image" src="./src/Images/3_Japan-kanto-tokyo-fuji.jpg"></img>
+        <p>Kanto is Japan’s most populated region as it’s home to the greater Tokyo area. 
+          You can also find gems like Yokohama,Hakone (and its five lakes), and Kamakura, 
+          an ancient city full of historic treasures.
+          Prefectures: Chiba, Gunma, Ibaraki, Kanagawa, Saitama, Tochigi, and Tokyo.
+        </p>
+        <button id='kanto-region-button'>Fly to Kanto</button>
+      </div>
+      <div id="chubu-info">
+        <h1>Chubu</h1>
+        <img id="chubu-info-image" src="./src/Images/4_japan-chubu.jpg"></img>
+        <p>The Chubu region is located in central Honshu, Japan’s largest island. 
+          It is very diverse, including the cities of Nagoya, Takayama and Kanazawa, 
+          the Japanese Alps and the mighty Mount Fuji.
+          Prefectures: Aichi, Fukui, Gifu, Ishikawa, Nagano, Niigata, Shizuoka, Toyama, and Yamanashi.
+        </p>
+        <button id='chubu-region-button'>Fly to Chubu</button>
+      </div>
+      <div id="kansai-info">
+        <h1>Kansai</h1>
+        <img id="kansai-info-image" src="./src/Images/5_kansai.jpg"></img>
+        <p>The Kansai or Kinki region is the western region of the island of Honshu 
+          and includes the cities of Himeji, Kobe, Kyoto, Osaka, and Nara. 
+          It is the cultural and historical heart of Japan and the second-most populated after Kanto.
+          Prefectures: Hyōgo, Kyoto, Mie, Nara, Osaka, Shiga and Wakayama.
+        </p>
+        <button id='kansai-region-button'>Fly to Kansai</button>
+      </div>
+      <div id="chugoku-info">
+        <h1>Chugoku</h1>
+        <img id="chugoku-info-image" src="./src/Images/6_CHUGOKU.jpg"></img>
+        <p>Chugoku, also known as the Sanin-Sanyo region, is the westernmost region of Honshu island. 
+          This is where you can ride the Sunrise Express night trains and visit the great Izumo Shrine, 
+          Okayama (and its Korakuen Garden), Hiroshima and Miyajima.
+          Prefectures: Hiroshima, Okayama, Shimane, Tottori and Yamaguchi.
+        </p>
+        <button id='chugoku-region-button'>Fly to Chugoku</button>
+      </div>
+      <div id="shikoku-info">
+        <h1>Shikoku</h1>
+        <img id="shikoku-info-image" src="./src/Images/7__shikoku-japan.jpg"></img>
+        <p>Shikoku is Japan’s smallest island and region and probably the most peaceful one. 
+          It is known for its abundant nature, beautiful rivers, and wonderful onsen, 
+          and it is the home of the 88 Temple Pilgrimage as well as Matsuyama and Takamatsu cities.
+          Prefectures: Ehime, Kagawa, Kōchi, and Tokushima.
+        </p>
+        <button id='shikoku-region-button'>Fly to Shikoku</button>
+      </div>
+      <div id="kyushu-info">
+        <h1>Kyushu</h1>
+        <img id="kyushu-info-image" src="./src/Images/8_kyushu-1.jpg"></img>
+        <p>The Kyushu region includes both Kyushu island and Okinawa islands. 
+          Kyushu offers a perfect mix of history, natural beauty, and modern cities like Fukuoka. 
+          Okinawa, the southernmost prefecture, its known for its magnificent beaches.
+          Prefectures: Fukuoka, Kumamoto, Nagasaki, Ōita and Saga in Northern Kyushu; 
+          Kagoshima, Miyazaki and Okinawa in Southern Kyushu.
+        </p>
+        <button id='kyushu-region-button'>Fly to Kyushu</button>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <div id='itinerary'>
+    <div id='notebook'>
+      <img id="notebook1" src="./src/Images/notebook1.png">
+      <img id="notebook2" src="./src/Images/notebook2.png">
+    </div>
+    <div id="prefectures-info">
+      <div id="hokkaido-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Hokkaido Prefecture</h1>
+          <p>Please select from one of Hokkaido's most popular cities!</p>
         </div>
-        <div id="tohoku-info">
-          <h1>Tohoku</h1>
-          <img id="tohoku-info" src="./src/Images/2_Yamagata-Tohoku-Japan-scenery.jpg"></img>
-          <p>Tohoku, in the north of Honshu islands, is one of Japan’s most scenic regions. 
-            Known for its mountains and great skiing spots, lakes, hot springs, castles and samurai residences. 
-            Its capital, Sendai, is known as the “city of trees” and is
-            home to one of the most popular summer festivals in Japan.
-            Prefectures: Akita, Aomori, Fukushima, Iwate, Miyagi, and Yamagata.
-          </p>
-          <button>Fly to Tohoku</button>
+        <div id="city-list">
+          <h2 id='sapporo-city-button'>Sapporo</h2>
+          <h2 id='furano-city-button'>Furano</h2>
+          <h2 id='hakodate-city-button'>Hakodate</h2>
         </div>
-        <div id="kanto-info">
-          <h1>Kanto</h1>
-          <img id="kanto-info" src="./src/Images/3_Japan-kanto-tokyo-fuji.jpg"></img>
-          <p>Kanto is Japan’s most populated region as it’s home to the greater Tokyo area. 
-            You can also find gems like Yokohama,Hakone (and its five lakes), and Kamakura, 
-            an ancient city full of historic treasures.
-            Prefectures: Chiba, Gunma, Ibaraki, Kanagawa, Saitama, Tochigi, and Tokyo.
-          </p>
-          <button>Fly to Kanto</button>
+      </div>
+      <div id="tohoku-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Tohoku Prefecture!</h1>
+          <p>Please select from one of Tohoku's most popular cities!</p>
         </div>
-        <div id="chubu-info">
-          <h1>Chubu</h1>
-          <img id="chubu-info" src="./src/Images/4_japan-chubu.jpg"></img>
-          <p>The Chubu region is located in central Honshu, Japan’s largest island. 
-            It is very diverse, including the cities of Nagoya, Takayama and Kanazawa, 
-            the Japanese Alps and the mighty Mount Fuji.
-            Prefectures: Aichi, Fukui, Gifu, Ishikawa, Nagano, Niigata, Shizuoka, Toyama, and Yamanashi.
-          </p>
-          <button>Fly to Chubu</button>
+        <div id="city-list">
+          <h2 id='akita-city-button'>Akita</h2>
+          <h2 id='aomori-city-button'>Aomori</h2>
+          <h2 id='sendai-city-button'>Sendai</h2>
         </div>
-        <div id="kansai-info">
-          <h1>Kansai</h1>
-          <img id="kansai-info" src="./src/Images/5_kansai.jpg"></img>
-          <p>The Kansai or Kinki region is the western region of the island of Honshu 
-            and includes the cities of Himeji, Kobe, Kyoto, Osaka, and Nara. 
-            It is the cultural and historical heart of Japan and the second-most populated after Kanto.
-            Prefectures: Hyōgo, Kyoto, Mie, Nara, Osaka, Shiga and Wakayama.
-          </p>
-          <button>Fly to Kansai</button>
+      </div>
+      <div id="kanto-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Kanto Prefecture!</h1>
+          <p>Please select from one of Kanto's most popular cities!</p>
         </div>
-        <div id="chugoku-info">
-          <h1>Chugoku</h1>
-          <img id="chugoku-info" src="./src/Images/6_CHUGOKU.jpg"></img>
-          <p>Chugoku, also known as the Sanin-Sanyo region, is the westernmost region of Honshu island. 
-            This is where you can ride the Sunrise Express night trains and visit the great Izumo Shrine, 
-            Okayama (and its Korakuen Garden), Hiroshima and Miyajima.
-            Prefectures: Hiroshima, Okayama, Shimane, Tottori and Yamaguchi.
-          </p>
-          <button>Fly to Chugoku</button>
+        <div id="city-list">
+          <h2 id='tokyo-city-button'>Tokyo</h2>
+          <h2 id='kanagawa-city-button'>Kanagawa</h2>
+          <h2 id='yokohama-city-button'>Yokohama</h2>
         </div>
-        <div id="shikoku-info">
-          <h1>Shikoku</h1>
-          <img id="shikoku-info" src="./src/Images/7__shikoku-japan.jpg"></img>
-          <p>Shikoku is Japan’s smallest island and region and probably the most peaceful one. 
-            It is known for its abundant nature, beautiful rivers, and wonderful onsen, 
-            and it is the home of the 88 Temple Pilgrimage as well as Matsuyama and Takamatsu cities.
-            Prefectures: Ehime, Kagawa, Kōchi, and Tokushima.
-          </p>
-          <button>Fly to Shikoku</button>
+      </div>
+      <div id="chubu-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Chubu Prefecture!</h1>
+          <p>Please select from one of Chubu's most popular cities!</p>
         </div>
-        <div id="kyushu-info">
-          <h1>Kyushu</h1>
-          <img id="kyushu-info" src="./src/Images/8_kyushu-1.jpg"></img>
-          <img id="kyushu-info" src="./src/Images/8_kyushu.jpg"></img>
-          <p>The Kyushu region includes both Kyushu island and Okinawa islands. 
-            Kyushu offers a perfect mix of history, natural beauty, and modern cities like Fukuoka. 
-            Okinawa, the southernmost prefecture, its known for its magnificent beaches.
-            Prefectures: Fukuoka, Kumamoto, Nagasaki, Ōita and Saga in Northern Kyushu; 
-            Kagoshima, Miyazaki and Okinawa in Southern Kyushu.
-          </p>
-          <button>Fly to Kyushu</button>
+        <div id="city-list">
+          <h2 id='kanazawa-city-button'>Kanazawa</h2>
+          <h2 id='nagano-city-button'>Nagano</h2>
+          <h2 id='toyama-city-button'>Toyama</h2>
+        </div>
+      </div>
+      <div id="kansai-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Kansai Prefecture!</h1>
+          <p>Please select from one of Kansai's most popular cities!</p>
+        </div>
+        <div id="city-list">
+          <h2 id='kyoto-city-button'>Kyoto</h2>
+          <h2 id='osaka-city-button'>Osaka</h2>
+          <h2 id='nara-city-button'>Nara</h2>
+        </div>
+      </div>
+      <div id="chugoku-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Chugoku Prefecture!</h1>
+          <p>Please select from one of Chugoku's most popular cities!</p>
+        </div>
+        <div id="city-list">
+          <h2 id='hiroshima-city-button'>Hiroshima</h2>
+          <h2 id='okayama-city-button'>Okayama</h2>
+          <h2 id='yonago-city-button'>Yonago</h2>
+        </div>
+      </div>
+      <div id="shikoku-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Shikoku Prefecture!</h1>
+          <p>Please select from one of Shikoku's most popular cities!</p>
+        </div>
+        <div id="city-list">
+          <h2 id='ehime-city-button'>Ehime</h2>
+          <h2 id='kagawa-city-button'>Kagawa</h2>
+          <h2 id='kochi-city-button'>Kochi</h2>
+        </div>
+      </div>
+      <div id="kyushu-prefecture">
+        <div id='heading'>
+          <h1 id='prefecture'>Welcome to Kyushu Prefecture!</h1>
+          <p>Please select from one of Kyushu's most popular cities!</p>
+        </div>
+        <div id="city-list">
+          <h2 id='nagasaki-city-button'>Nagasaki</h2>
+          <h2 id='kagoshima-city-button'>Kagoshima</h2>
+          <h2 id='okinawa-city-button'>Okinawa</h2>
         </div>
       </div>
     </div>
-    
-    <script src="./dist/main.js"></script>
-  </body>
+  </div>
+
+  <div id='city-tourist-spots'>
+    <div id='hokkaido-tourist-spots'>
+      <div id='sapporo-tourist-spot-list'>
+        <div id='sapporo-culture'>
+          <h1>Sapporo Snow Festival</h1>
+          <img src='./src/Images/sapporo-snow-festival-iStock-mu_mu_.jpg'>
+          <p>The Sapporo Snow Festival (さっぽろ雪まつり, Sapporo Yuki Matsuri) is held during one week every February in Hokkaido's capital
+            Sapporo. It is one of Japan's most popular winter events.
+            
+            The Sapporo Snow Festival was started in 1950, when high school students built a few snow statues in Odori Park. It has
+            since developed into a large, commercialized event, featuring spectacular snow and ice sculptures and attracting more
+            than two million visitors from Japan and across the world.
+            
+            The snow festival is staged on three sites: the Odori Site, Susukino Site and Tsu Dome Site.</p>
+            <button>Visit Cultural Spot</button>
+          </div>
+          <div id='sapporo-food'>
+            <h1>Curb Market</h1>
+            <img src='./src/Images/sapporo-curb-market.jpg'>
+            <p>Curb Market (札幌場外市場, Sapporo Jōgai Ichiba) consists of nearly 80 stores and restaurants lined up along several blocks
+            just outside of Sapporo's Central Wholesale Market. One of the city's largest public markets, the Curb Market
+            specializes in Hokkaido seafood such as crab, sea urchin, salmon roe, squid and scallops, and local produce such as
+            corn, melons and potatoes when in season.
+            
+            The market's shops cater to both locals and tourists alike, and have a good selection at reasonable prices. Like other
+            seafood markets around Japan, an excellent way to experience the market's offerings is to have a meal of fresh local
+            seafood served over rice (domburi) at one of the local restaurants.</p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div id='saporo-history'>
+          <h1>Historic Village of Hokkaido</h1>
+          <img src='./src/Images/sapporo-historic-village-hokkaido.jpg'>
+          <p>The Historic Village of Hokkaido (開拓の村, Kaitaku no Mura) is an open air museum in the suburbs of Sapporo. It exhibits
+          about 60 typical buildings from all over Hokkaido, dating from the Meiji and Taisho Periods (1868 to 1926), the era when
+          Hokkaido's development was carried out on a large scale. There are four different sections: a town, fishing village,
+          farm village and a mountain village.</p>
+          <button>Visit Historical Spot</button>
+        </div>
+      </div>
+      <div id='furano-tourist-spot-list'>
+        <div>
+          <h1>Farm Tomita</h1>
+          <img src='./src/Images/furano-farm-tomita.jpg'>
+          <p>There are numerous flower fields of various sizes all across Furano. The best spot to view the lavender is Farm Tomita,
+          whose lavender and flower fields with the Tokachi mountain range as backdrop are spectacular. The popular farm is free
+          to enter and besides the flower fields has cafes and shops that sell a wide range of lavender related products. The farm
+          naturally gets rather busy during the peak season.</p>
+          <button>Visit Photo Spot</button>
+        </div>
+        <div>
+          <h1>Blue Pond</h1>
+          <img src='./src/Images/furano-biei-pond.jpg'>
+          <p>The Blue Pond (青い池, Aoiike) outside the hot spring town of Shirogane Onsen is named after is deep blue color which it
+          owes to natural minerals dissolved in the water. Not promoted as a tourist spot until recent years, the pond is part of
+          an erosion control system that was built to prevent damage to Biei in case of an eruption by nearby Mount Tokachidake.
+          </p>
+          <button>Visit Natural Spot</button>
+        </div>
+        <div>
+          <h1>Biei</h1>
+          <img src='./src/Images/furano-biei.jpg'>
+          <p>Biei (美瑛) is a small town surrounded by a picturesque landscape of gently rolling hills and vast fields. A pleasant way
+          to enjoy the charm of Biei is by cycling or driving through the hills and visiting some of the flower fields and famous
+          trees along the way. The area northwest of the town center is named "Patchwork Road" and the area south of the town
+          center "Panorama Road".</p>
+          <button>Visit Photo Spot</button>
+        </div>
+      </div>
+      <div id='hakodate-tourist-spot-list'>
+        <div>
+          <h1>Mount Hakodate</h1>
+          <img src='./src/Images/hakodate-mt-hakodate.jpg'>
+          <p>Mount Hakodate (函館山, Hakodateyama) is a 334 meter high, wooded mountain at the southern end of the peninsula on which
+          much of central Hakodate is located. On clear days and nights, in particular, the views from the mountain are
+          spectacular and included among Japan's three best night views alongside the views from Nagasaki's Mount Inasa and Kobe's
+          Mount Rokko.</p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1>Fort Goryokaku</h1>
+          <img src='./src/Images/hakodate-Fort Goryokaku.jpg'>
+          <p>Fort Goryokaku (五稜郭, Goryōkaku) is a massive, star shaped, Western style citadel, which was built in the last years of
+          the Edo Period for the defense of Hakodate against the imperialist threat posed by the Western powers. A few years
+          later, the fort became the site of a civil war between an army of the shogunate and the superior troops of the newly
+          established Meiji government.
+          
+          After the fort had lost its military importance, it was eventually turned into a public park in the 1910s. Over one
+          thousand cherry trees were planted along its moats, making it one of Hokkaido's best cherry blossom spots. The peak of
+          the blooming season usually takes place around early May.</p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1>Morning Market</h1>
+          <img src='./src/Images/hakodate-morning-market.jpg'>
+          <p>The Hakodate Morning Market (函館朝市, Hakodate Asaichi) is held daily from 5am (from 6am during winter) to noon, just a few
+          steps away from JR Hakodate Station. The market area spans about four city blocks.
+          
+          Products on sale include various types of fresh seafood such as crabs (kani), salmon eggs (ikura) and sea urchin (uni),
+          as well as fresh produce such as melons. Many restaurants can be found in the market area, offering fresh seafood
+          breakfasts, such as uni-ikura domburi.
+          </p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='tohoku-tourist-spots'>
+      <div id='akita-tourist-spot-list'>
+        <div>
+          <h1>Kanto Festival</h1>
+          <img src='./src/Images/AkitaKantoTop.jpg'>
+          <p>The Kanto Matsuri (竿燈まつり, "pole lantern festival") is a Tanabata related celebration in Akita City, held every year from
+          August 3 to 6. The highlight of the festival is an impressive display of skill in which performers balance kanto (long
+          bamboo poles) with arrays of paper lanterns attached to the end. The Kanto Matsuri together with Aomori's Nebuta
+          Festival and Sendai's Tanabata makes up the three great festivals of the Tohoku Region.
+          
+          The kanto poles come in different sizes with the largest measuring 12 meters, weighing 50 kilograms and carrying as many
+          as 46 paper lanterns, lit by real candles. To the sound of drums, flutes and onlookers chanting "dokkoisho, dokkoisho",
+          each kanto is hoisted up by a single performer who balance them on end using various techniques. The performers change
+          every few minutes and gradually add extensions to the pole until the kanto are at their maximum height.</p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1>Kakunodate</h1>
+          <img src='./src/Images/akita-kakunodate.jpg'>
+          <p>Kakunodate (角館) is a former castle town and samurai stronghold in today's Akita Prefecture. While Kakunodate Castle no
+          longer remains, the town is famous for its samurai tradition and its hundreds of weeping cherry trees (shidarezakura).
+          
+          Apart from the loss of its castle, Kakunodate remains remarkably unchanged since its founding in 1620. The town was
+          built with two distinct areas, the samurai district and the merchant district. Once home to 80 families, the samurai
+          district still has some of the best examples of samurai architecture in all of Japan.
+          
+          Kakunodate is also well known as the location of one of the Tohoku Region's most popular cherry blossom spots. Around
+          late April and early May, large crowds of people come to see Kakunodate's special combination of pink blossoms and
+          historic homes.</p>
+          <button>Visit Historical Spot</button>
+        </div>
+        <div>
+          <h1>Hachimantai</h1>
+          <img src='./src/Images/akita-hachimantai.jpg'>
+          <p>Hachimantai (八幡平) is a mountainous region in northern Akita and Iwate Prefectures, which makes up the southern part of
+          the Towada-Hachimantai National Park. The region is far removed from Japan's cities and offers some of the country's
+          best rustic hot springs and volcanic landscapes that will delight travelers looking to explore the Japanese countryside.</p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='aomori-tourist-spot-list'>
+        <div>
+          <h1>Nebuta Matsuri</h1>
+          <img src='./src/Images/nebutamatsuri.jpg'>
+          <p>Nebuta and Neputa are a type of Tanabata related summer festival held in towns around Aomori Prefecture. The largest of
+          these festivals is the Nebuta Matsuri (ねぶた祭) of Aomori City, held every year from August 2 to 7. The highlight of the
+          festival is the daily parade of enormous lantern floats, flanked by large taiko drums, musicians and dancers. The Nebuta
+          Matsuri together with Akita's Kanto Matsuri and Sendai's Tanabata make up the Tohoku Sandai Matsuri (Three Great
+          Festivals of the Tohoku Region).
+          
+          Local teams build the festival's two dozen floats, which are constructed of painted washi paper over a wire frame and
+          take an entire year to design and construct. They can be up to nine meters wide and five meters tall and often depict
+          gods, historical or mythical figures from both Japanese and Chinese culture, kabuki actors, and characters from the
+          popular NHK Taiga Drama historical TV series.</p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1>Shirakami Sanchi</h1>
+          <img src='./src/Images/aomori_shirakami_sanchi.jpg'>
+          <p>Shirakami Sanchi (白神山地) is an extensive mountain range straddling the border between Aomori and Akita prefectures in the
+          northern Tohoku Region of Japan. The central core of Shirakami Sanchi is made up of the last virgin beech forests in
+          Japan, for which the region was declared one of the country's first UNESCO World Heritage Sites in 1993.
+
+          One popular destination are the Juniko ("twelve lakes"), a series of small lakes and ponds connected by hiking
+          trails, on the north western side of Shirakami Sanchi along the coast of the Sea of Japan. The area offers scenic day
+          hiking, fishing, boating and camping around its lakes and ponds, one of which, Aoike, has enchanted looking, almost
+          unnaturally blue water. There is also a small visitor center, the Juniko Eco-Museum Center Kokyokan, that explains about
+          the area's beech forests.
+          </p>
+          <button>Visit Photo Spot</button>
+        </div>
+        <div>
+          <h1>Hirosaki Castle</h1>
+          <img src='./src/Images/nebuta_warasse.jpg'>
+          <p>During the Edo Period, Hirosaki (弘前) was the political and cultural capital of the Tsugaru Region, the western section
+          of present day Aomori Prefecture. The city remains one of the culturally richest cities in the northern Tohoku Region.
+          
+          Hirosaki developed around its castle, Hirosaki Castle. Several thousand cherry trees are planted around the castle
+          grounds, which become one of Japan's most spectacular cherry blossom spots typically from late April to early May.
+          </p>
+          <button>Visit Historical Spot</button>
+        </div>
+      </div>
+      <div id='sendai-tourist-spot-list'>
+        <div>
+          <h1>Gyutan</h1>
+          <img src='./src/Images/sendai-gyutan.jpg'>
+          <p>Sendai is the original home of gyutan (牛タン, gyūtan), a dish consisting of pieces of thinly sliced beef tongue, cooked
+          over a charcoal grill. Besides the standard version of grilled tongue and pickled vegetables seen above, gyutan is also
+          popular in donburi form, as a curry, or in a beef stew.
+          
+          The dish originated fairly recently in 1948 when a yakitori restaurant owner in Sendai devoted his business to the
+          preparation of beef tongue dishes. It has grown rapidly in popularity and spread throughout Japan.
+          
+          Common side dishes of gyutan are oxtail soup, and mugi gohan (steamed white rice with barley). In its donburi variety,
+          gyutan is served over a bowl of steamed white rice, while the curry gyutan is accompanied by rice as well.
+          
+          The two most popular gyutan restaurant chains are Rikyu and Kisuke. Both of these chains have branches on Gyutan Dori
+          (gyutan street) on third floor of Sendai Station. The restaurants of Gyutan Dori open their doors at 10:00 while most of
+          the city branch gyutan chains open for lunch around 11:00. Menus generally range in price from about 1000 yen to about
+          2000 yen.</p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1>Sendai Tanabata Matsuri</h1>
+          <img src='./src/Images/sendai-tanabata.jpg'>
+          <p>Tanabata festivals, also known as "star festivals", are held across Japan on the 7th day of the 7th month of the year,
+          when, according to Chinese legend, the two stars Altair and Vega cross paths. Due to differences between the lunar
+          calendar and the solar calendar, modern tanabata festivals take place either in July or August.
+          
+          The Sendai Tanabata Matsuri (仙台七夕まつり), held every year on August 6-8, is one of the largest and most famous tanabata
+          celebrations in Japan. Together, with Akita's Kanto Matsuri and Aomori's Nebuta Matsuri, it makes up the Tohoku Sandai
+          Matsuri (Three Great Festivals of the Tohoku Region).
+          
+          While festivities take place throughout Downtown Sendai, the festival's main feature are thousands of colorful streamers
+          that decorate the city's shopping arcades, which come to resemble brightly colored forests. Each set of 3-5 meter long
+          streamers is handcrafted by local shops, schools and community groups out of washi paper and bamboo. They are then hung
+          from ten meter long bamboo poles along the arcades.</p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1>Zuihoden Mausoleum</h1>
+          <img src='./src/Images/sendai-zuihoden.jpg'>
+          <p>Zuihoden (瑞鳳殿, Zuihōden) is the mausoleum of Date Masamune, one of the most powerful feudal lords of the Edo Period.
+          Masamune was the first in a long line of Date lords to rule over Sendai from Aoba Castle. His son and grandson, Date
+          Tadamune and Date Tsunamune, are entombed in nearby mausoleums, while other descendants are laid to rest in less
+          elaborate graves and tombs.
+          
+          Zuihoden was designed in the ornate style of the Momoyama Period. It features intricate woodwork and a rich variety of
+          vivid colors. Masamune's son and grandson are entombed in smaller mausoleums designed in the same style.
+          Massive cedar trees surround the paths in the area, and are meant to symbolize the long history of the Date clan.</p>
+          <button>Visit Historical Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='kanto-tourist-spots'>
+      <div id='tokyo-tourist-spot-list'>
+        <div>
+          <h1>Tokyo Skytree</h1>
+          <img src='./src/Images/tokyo-skytree.jpg'>
+          <p>The Tokyo Skytree (東京スカイツリー) is a television broadcasting tower and landmark of Tokyo. It is the centerpiece of the
+          Tokyo Skytree Town in the Sumida City Ward, not far away from Asakusa. With a height of 634 meters (634 can be read as
+          "Musashi", a historic name of the Tokyo Region), it is the tallest structure in Japan and the second tallest in the
+          world at the time of its completion. A large shopping complex with aquarium is located at its base.
+        
+          The highlight of the Tokyo Skytree is its two observation decks which offer spectacular views out over Tokyo. The two
+          enclosed decks are located at heights of 350 and 450 meters respectively, making them the highest observation decks in
+          Japan and some of the highest in the world.</p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1>Asakusa</h1>
+          <img src='./src/Images/tokyo-Asakusa.jpg'>
+          <p>Asakusa (浅草) is the center of Tokyo's shitamachi (literally "low city"), one of Tokyo's districts, where an atmosphere
+          of the Tokyo of past decades survives.
+          
+          Asakusa's main attraction is Sensoji, a very popular Buddhist temple, built in the 7th century. The temple is approached
+          via the Nakamise, a shopping street that has been providing temple visitors with a variety of traditional, local snacks
+          and tourist souvenirs for centuries.</p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1>Shibuya</h1>
+          <img src='./src/Images/tokyo-Shibuya.jpg'>
+          <p>Shibuya (渋谷) is one of the twenty-three city wards of Tokyo, but often refers to just the popular shopping and
+          entertainment area found around Shibuya Station. In this regard, Shibuya is one of Tokyo's most colorful and busy
+          districts, packed with shopping, dining and nightclubs serving swarms of visitors that come to the district everyday.
+          
+          Shibuya is a center for youth fashion and culture, and its streets are the birthplace to many of Japan's fashion and
+          entertainment trends. Over a dozen major department store branches can be found around the area catering to all types of
+          shoppers. Most of the area's large department and fashion stores belong to either Tokyu or Seibu, two competing
+          corporations.</p>
+          <button>Visit Photo Spot</button>
+        </div>
+      </div>
+      <div id='kanagawa-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='yokohama-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='chubu-tourist-spots'>
+      <div id='kanazawa-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='nagano-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='toyama-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='kansai-tourist-spots'>
+      <div id='kyoto-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='osaka-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='nara-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='chugoku-tourist-spots'>
+      <div id='hiroshima-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='okayama-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='yonago-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='shikoku-tourist-spots'>
+      <div id='ehime-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='kagawa-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='kochi-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+    <div id='kyushu-tourist-spots'>
+      <div id='nagasaki-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='kagoshima-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+      <div id='okinawa-tourist-spot-list'>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Cultural Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+        <div>
+          <h1></h1>
+          <img src='./src/Images/'>
+          <p></p>
+          <button>Visit Food Spot</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+  <script src="./main.js"></script>
+</body>
   </html>
