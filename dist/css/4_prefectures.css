@@ -4,6 +4,7 @@
 
 h1#prefecture {
   padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 #hokkaido-prefecture,
@@ -15,6 +16,8 @@ h1#prefecture {
 #shikoku-prefecture,
 #kyushu-prefecture {
   display: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid pink;
 }
 
 #hokkaido-prefecture p,
@@ -78,6 +81,7 @@ h1#prefecture {
 #kagoshima-city-button,
 #okinawa-city-button {
   padding: 5px;
+  border-bottom: 2px solid pink;
 }
 
 #sapporo-city-button:hover,
@@ -104,7 +108,8 @@ h1#prefecture {
 #kagoshima-city-button:hover,
 #okinawa-city-button:hover {
   padding: 5px;
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid gold;
+  cursor: pointer;
 }
 
 #sapporo-city-button:active ,
@@ -159,15 +164,4 @@ h1#prefecture {
 #okinawa-city-button:focus {
   padding: 5px;
   border-bottom: 2px solid gold;
-}
-
-#hokkaido-tourist-spots,
-#tohoku-tourist-spots,
-#kanto-tourist-spots,
-#chubu-tourist-spots,
-#kansai-tourist-spots,
-#chugoku-tourist-spots,
-#shikoku-tourist-spots,
-#kyushu-tourist-spots {
-  display: none;
 }

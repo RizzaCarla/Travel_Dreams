@@ -16,6 +16,11 @@ hokkaidoButton.addEventListener('click', (e) => {
   document.getElementById('hokkaido-prefecture').style.display = 'flex';
   document.getElementById('hokkaido-prefecture').style.justifyContent = 'center';
   document.getElementById('hokkaido-prefecture').style.flexDirection = 'column';
+
+  document.getElementById('sapporo-tourist-spot-list').style.display = 'flex';
+  document.getElementById('sapporo-tourist-spot-list').style.flexDirection = "row";
+  document.getElementById('sapporo-tourist-spot-list').style.justifyContent = "space-between";
+  document.getElementById('sapporo-city-button').style.borderBottom = "2px solid gold";
 })
 
 tohokuButton.addEventListener('click', (e) => {

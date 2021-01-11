@@ -87,3 +87,14 @@
   filter: opacity(55%);
   margin-bottom: 20px;
 }
+
+#hokkaido-region:hover,
+#tohoku-region:hover,
+#chubu-region:hover,
+#kanto-region:hover,
+#kansai-region:hover,
+#chugoku-region:hover,
+#shikoku-region:hover,
+#kyushu-region:hover {
+  cursor: pointer;
+}
