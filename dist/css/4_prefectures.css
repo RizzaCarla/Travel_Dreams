@@ -7,27 +7,46 @@ h1#prefecture {
   padding-top: 10px;
 }
 
-#hokkaido-prefecture,
-#tohoku-prefecture,
-#kanto-prefecture,
-#chubu-prefecture,
-#kansai-prefecture,
-#chugoku-prefecture,
-#shikoku-prefecture,
-#kyushu-prefecture {
+
+#back-button {
+  position: absolute;
+  left: 40px;
+  top: 3%;
+  font-size: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+#go-home-button {
+  position: absolute;
+  right: 40px; 
+  top: 4%;
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+#hokkaido-prefecture-list,
+#tohoku-prefecture-list,
+#kanto-prefecture-list,
+#chubu-prefecture-list,
+#kansai-prefecture-list,
+#chugoku-prefecture-list,
+#shikoku-prefecture-list,
+#kyushu-prefecture-list {
   display: none;
   padding-bottom: 10px;
   border-bottom: 1px solid pink;
 }
 
-#hokkaido-prefecture p,
-#tohoku-prefecture p,
-#kanto-prefecture p,
-#chubu-prefecture p,
-#kansai-prefecture p,
-#chugoku-prefecture p,
-#shikoku-prefecture p,
-#kyushu-prefecture p {
+#hokkaido-prefecture-list p,
+#tohoku-prefecture-list p,
+#kanto-prefecture-list p,
+#chubu-prefecture-list p,
+#kansai-prefecture-list p,
+#chugoku-prefecture-list p,
+#shikoku-prefecture-list p,
+#kyushu-prefecture-list p {
   display: flex;
   justify-content: center;
   padding-bottom: 18px;
@@ -57,111 +76,30 @@ h1#prefecture {
   justify-content: space-around;
 }
 
-#sapporo-city-button,
-#furano-city-button,
-#hakodate-city-button,
-#akita-city-button,
-#sendai-city-button,
-#tokyo-city-button,
-#kanagawa-city-button,
-#yokohama-city-button,
-#kanazawa-city-button,
-#nagano-city-button,
-#toyama-city-button,
-#kyoto-city-button,
-#osaka-city-button,
-#nara-city-button,
-#hiroshima-city-button,
-#okayama-city-button,
-#yonago-city-button,
-#ehime-city-button,
-#kagawa-city-button,
-#kochi-city-button,
-#nagasaki-city-button,
-#kagoshima-city-button,
-#okinawa-city-button {
+#hokkaido-cultural-button,
+#hokkaido-historical-button,
+#hokkaido-picture-perfect-button,
+#tohoku-cultural-button,
+#tohoku-historical-button,
+#tohoku-picture-perfect-button, 
+#kanto-cultural-button,
+#kanto-historical-button,
+#kanto-picture-perfect-button, 
+#chubu-cultural-button,
+#chubu-historical-button,
+#chubu-picture-perfect-button, 
+#kansai-cultural-button,
+#kansai-historical-button,
+#kansai-picture-perfect-button, 
+#chugoku-cultural-button,
+#chugoku-historical-button,
+#chugoku-picture-perfect-button, 
+#shikoku-cultural-button,
+#shikoku-historical-button,
+#shikoku-picture-perfect-button, 
+#kyushu-cultural-button,
+#kyushu-historical-button,
+#kyushu-picture-perfect-button {
   padding: 5px;
-  border-bottom: 2px solid pink;
-}
-
-#sapporo-city-button:hover,
-#furano-city-button:hover,
-#hakodate-city-button:hover,
-#akita-city-button:hover,
-#sendai-city-button:hover,
-#tokyo-city-button:hover,
-#kanagawa-city-button:hover,
-#yokohama-city-button:hover,
-#kanazawa-city-button:hover,
-#nagano-city-button:hover,
-#toyama-city-button:hover,
-#kyoto-city-button:hover,
-#osaka-city-button:hover,
-#nara-city-button:hover,
-#hiroshima-city-button:hover,
-#okayama-city-button:hover,
-#yonago-city-button:hover,
-#ehime-city-button:hover,
-#kagawa-city-button:hover,
-#kochi-city-button:hover,
-#nagasaki-city-button:hover,
-#kagoshima-city-button:hover,
-#okinawa-city-button:hover {
-  padding: 5px;
-  border-bottom: 2px solid gold;
   cursor: pointer;
-}
-
-#sapporo-city-button:active ,
-#furano-city-button:active ,
-#hakodate-city-button:active ,
-#akita-city-button:active ,
-#sendai-city-button:active ,
-#tokyo-city-button:active ,
-#kanagawa-city-button:active ,
-#yokohama-city-button:active ,
-#kanazawa-city-button:active ,
-#nagano-city-button:active ,
-#toyama-city-button:active ,
-#kyoto-city-button:active ,
-#osaka-city-button:active ,
-#nara-city-button:active ,
-#hiroshima-city-button:active ,
-#okayama-city-button:active ,
-#yonago-city-button:active ,
-#ehime-city-button:active ,
-#kagawa-city-button:active ,
-#kochi-city-button:active ,
-#nagasaki-city-button:active ,
-#kagoshima-city-button:active ,
-#okinawa-city-button:active {
-  padding: 5px;
-  border-bottom: 2px solid gold;
-}
-
-#sapporo-city-button:focus,
-#furano-city-button:focus,
-#hakodate-city-button:focus,
-#akita-city-button:focus,
-#sendai-city-button:focus,
-#tokyo-city-button:focus,
-#kanagawa-city-button:focus,
-#yokohama-city-button:focus,
-#kanazawa-city-button:focus,
-#nagano-city-button:focus,
-#toyama-city-button:focus,
-#kyoto-city-button:focus,
-#osaka-city-button:focus,
-#nara-city-button:focus,
-#hiroshima-city-button:focus,
-#okayama-city-button:focus,
-#yonago-city-button:focus,
-#ehime-city-button:focus,
-#kagawa-city-button:focus,
-#kochi-city-button:focus,
-#nagasaki-city-button:focus,
-#kagoshima-city-button:focus,
-#okinawa-city-button:focus {
-  padding: 5px;
-  border-bottom: 2px solid gold;
 }

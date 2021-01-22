@@ -3,8 +3,7 @@
   width: 50%;
   height: auto;
   display: none;
-  margin-left: 50%;
-  
+  margin-left: 50%;  
 }
 
 #hokkaido-info, 
@@ -27,6 +26,35 @@
 
 #hokkaido-info {
   visibility: visible;
+  padding-top: 6%;
+}
+
+#tohoku-info {
+  
+}
+
+#kanto-info {
+
+}
+
+#chubu-info {
+
+}
+
+#kansai-info {
+
+}
+
+#chugoku-info {
+
+}
+
+#shikoku-info {
+
+}
+
+#kyushu-info {
+
 }
 
 .appear {
@@ -60,6 +88,12 @@
   /* text-decoration: underline; */
 }
 
+#back-button {
+  position: fixed;
+  left: 670px;
+  font-size: 40px;
+}
+
 #region-info p {
   margin: 5px;
   text-align: justify;
@@ -75,6 +109,7 @@
   border: 1.5px solid	gold;
   border-radius: 5%;
   padding: 5px 10px 5px 10px;
+  cursor: pointer;
 }
 
 #region-info button:hover {

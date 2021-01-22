@@ -21,71 +21,79 @@
 #hokkaido-region {
   position: relative;
   width: 30%;
-  left: 62%;
-  top: 0%;
+  left: 60%;
+  top: -8%;
+  z-index: 8;
 }
 
 #tohoku-region {
   position: relative;
-  width: 27%;
-  left: 23.2%;
-  top: 23.4%;
+  width: 15%;
+  left: 27.3%;
+  top: 20%;
   transform: rotate(1deg);
   filter: opacity(55%);
+  z-index: 7;
 }
 
 #chubu-region {
   position: relative;
   width: 23%;
-  left: 42.6%;
-  top: 9.9%;
-  transform: rotate(0.8deg);
+  left: -18.7%;
+  top: 32.7%;
+  transform: rotate(0.5deg);
   filter: opacity(55%);
+  z-index: 5;
 }
 
 #kanto-region {
   position: relative;
-  width: 27.3%;
-  left: -9.7%;
-  top: 48.95%;
+  width: 12%;
+  left: 8%;
+  top: 46.77%;
   filter: opacity(55%);
-  transform: rotate(0.5deg)
+  transform: rotate(0.5deg);
+  z-index: 6;
 }
 
 #kansai-region {
   position: relative;
-  width: 15%;
-  left: 12.7%;
-  top: 16%;
+  width: 13.8%;
+  left: -48.7%;
+  top: 39%;
   filter: opacity(55%);
+  z-index: 4;
+  transform: rotate(-0.5deg);
 }
 
 #chugoku-region {
   position: relative;
   width: 20%;
-  left: -19.3%;
-  top: 13.9%;
-  transform: rotate(0.5deg);
+  left: 16.5%;
+  top: -5.5%;
   filter: opacity(55%);
+  z-index: 3;
 }
 
 #shikoku-region {
   position: relative;
-  width: 16%;
-  left: -36.5%;
-  top: 22.5%;
-  transform: rotate(4deg);
+  width: 16.5%;
+  left: -0.5%;
+  top: 6%;
+  transform: rotate(3.5deg);
   filter: opacity(55%);
+  z-index: 2;
 }
 
 #kyushu-region {
   position: relative;
-  width: 33%;
-  left: -0.5%;
-  top: -0.8%;
+  width: 20%;
+  left: -35.5%;
+  top: 23%;
   transform: rotate(3deg);
   filter: opacity(55%);
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 #hokkaido-region:hover,
