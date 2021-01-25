@@ -11,7 +11,7 @@
   <link rel='stylesheet' href="./dist/css/3_region.css">
   <link rel='stylesheet' href="./dist/css/4_prefectures.css">
   <link rel='stylesheet' href="./dist/css/5_t-spots.css">
-  <link rel='stylesheet' href="./dist/css/6_notebook.css">
+  <link rel='stylesheet' href="./dist/css/6_end_modal.css">
   <link rel="icon" href="./src/Images/Travel_Dreams.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -23,17 +23,22 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <title>Travel Dreams</title>
 </head>
 <body>
   <!-- Starting Modal -->
   <div id="starting-modal">
-    <h1>Travel Dreams
-      <i class="fas fa-star"></i>
-    </h1>
-    <div id="starting-modal-line"></div>
-    <p>Thank you for flying with Japan Airlines! You will be landing in Narita International Airport shortly.</p>
-    <button id="starting-modal-button">Enter Airport</button>
+    <div id='start-inner-box'>
+      <h1>Travel Dreams
+        <i class="fas fa-star"></i>
+      </h1>
+      <div id="starting-modal-line"></div>
+      <p>Thank you for flying with Japan Airlines!</p>
+      <p>You will be landing in Narita International Airport shortly.</p>
+      <button id="starting-modal-button">Enter Airport</button>
+    </div>
   </div>
   
   <div id="region-page">
@@ -137,99 +142,97 @@
       <br>
     </div>
   </div>
-
+  
   <div id='itinerary'>
-    <div id='notebook'>
-      <img id="notebook1" src="./src/Images/notebook1.png">
-      <img id="notebook2" src="./src/Images/notebook2.png">
-    </div>
     <div id="prefectures-info">
-      <div id="hokkaido-prefecture">
+      <i id="back-button" class="material-icons">&#xe5c4;</i>
+      <i id='go-home-button' class='fas fa-home'></i>
+      <div id="hokkaido-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Hokkaido Prefecture</h1>
-          <p>Please select from one of Hokkaido's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Hokkaido</h1>
+          <p>Please select from one of the categories!</p>
         </div>
         <div id="city-list">
-          <h2 id='sapporo-city-button'>Sapporo</h2>
-          <h2 id='furano-city-button'>Furano</h2>
-          <h2 id='hakodate-city-button'>Hakodate</h2>
+          <h2 id='hokkaido-cultural-button'>Cultural</h2>
+          <h2 id='hokkaido-historical-button'>Historical</h2>
+          <h2 id='hokkaido-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
-      <div id="tohoku-prefecture">
+      <div id="tohoku-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Tohoku Prefecture!</h1>
-          <p>Please select from one of Tohoku's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Tohoku!</h1>
+          <p>Please select from one of Tohoku's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='akita-city-button'>Akita</h2>
-          <h2 id='aomori-city-button'>Aomori</h2>
-          <h2 id='sendai-city-button'>Sendai</h2>
+          <h2 id='tohoku-cultural-button'>Cultural</h2>
+          <h2 id='tohoku-historical-button'>Historical</h2>
+          <h2 id='tohoku-picture-perfect-button'>Picture-Perfect</h2>
         </div>
       </div>
-      <div id="kanto-prefecture">
+      <div id="kanto-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Kanto Prefecture!</h1>
-          <p>Please select from one of Kanto's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Kanto!</h1>
+          <p>Please select from one of Kanto's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='tokyo-city-button'>Tokyo</h2>
-          <h2 id='kanagawa-city-button'>Kanagawa</h2>
-          <h2 id='yokohama-city-button'>Yokohama</h2>
+          <h2 id='kanto-cultural-button'>Cultural</h2>
+          <h2 id='kanto-historical-button'>Historical</h2>
+          <h2 id='kanto-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
-      <div id="chubu-prefecture">
+      <div id="chubu-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Chubu Prefecture!</h1>
-          <p>Please select from one of Chubu's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Chubu!</h1>
+          <p>Please select from one of Chubu's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='kanazawa-city-button'>Kanazawa</h2>
-          <h2 id='nagano-city-button'>Nagano</h2>
-          <h2 id='toyama-city-button'>Toyama</h2>
+          <h2 id='chubu-cultural-button'>Cultural</h2>
+          <h2 id='chubu-historical-button'>Historical</h2>
+          <h2 id='chubu-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
-      <div id="kansai-prefecture">
+      <div id="kansai-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Kansai Prefecture!</h1>
-          <p>Please select from one of Kansai's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Kansai!</h1>
+          <p>Please select from one of Kansai's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='kyoto-city-button'>Kyoto</h2>
-          <h2 id='osaka-city-button'>Osaka</h2>
-          <h2 id='nara-city-button'>Nara</h2>
+          <h2 id='kansai-cultural-button'>Cultural</h2>
+          <h2 id='kansai-historical-button'>Historical</h2>
+          <h2 id='kansai-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
-      <div id="chugoku-prefecture">
+      <div id="chugoku-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Chugoku Prefecture!</h1>
-          <p>Please select from one of Chugoku's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Chugoku!</h1>
+          <p>Please select from one of Chugoku's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='hiroshima-city-button'>Hiroshima</h2>
-          <h2 id='okayama-city-button'>Okayama</h2>
-          <h2 id='yonago-city-button'>Yonago</h2>
+          <h2 id='chugoku-cultural-button'>Cultural</h2>
+          <h2 id='chugoku-historical-button'>Historical</h2>
+          <h2 id='chugoku-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
-      <div id="shikoku-prefecture">
+      <div id="shikoku-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Shikoku Prefecture!</h1>
-          <p>Please select from one of Shikoku's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Shikoku!</h1>
+          <p>Please select from one of Shikoku's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='ehime-city-button'>Ehime</h2>
-          <h2 id='kagawa-city-button'>Kagawa</h2>
-          <h2 id='kochi-city-button'>Kochi</h2>
+          <h2 id='shikoku-cultural-button'>Cultural</h2>
+          <h2 id='shikoku-historical-button'>Historical</h2>
+          <h2 id='shikoku-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
-      <div id="kyushu-prefecture">
+      <div id="kyushu-prefecture-list">
         <div id='heading'>
-          <h1 id='prefecture'>Welcome to Kyushu Prefecture!</h1>
-          <p>Please select from one of Kyushu's most popular cities!</p>
+          <h1 id='prefecture'>Welcome to Kyushu!</h1>
+          <p>Please select from one of Kyushu's most popular prefectures!</p>
         </div>
         <div id="city-list">
-          <h2 id='nagasaki-city-button'>Nagasaki</h2>
-          <h2 id='kagoshima-city-button'>Kagoshima</h2>
-          <h2 id='okinawa-city-button'>Okinawa</h2>
+          <h2 id='kyushu-cultural-button'>Cultural</h2>
+          <h2 id='kyushu-historical-button'>Historical</h2>
+          <h2 id='kyushu-picture-perfect-button'>Picture-Pefect</h2>
         </div>
       </div>
     </div>
@@ -237,8 +240,8 @@
 
   <div id='city-tourist-spots'>
     <div id='hokkaido-tourist-spots'>
-      <div id='sapporo-tourist-spot-list'>
-        <div id='sapporo-culture'>
+      <div id='hokkaido-cultural-list'>
+        <div>
           <h1>Sapporo Snow Festival</h1>
           <img src='./src/Images/sapporo-snow-festival-iStock-mu_mu_.jpg'>
           <p>The Sapporo Snow Festival (さっぽろ雪まつり, Sapporo Yuki Matsuri) is held during one week every February in Hokkaido's capital
@@ -249,12 +252,11 @@
             than two million visitors from Japan and across the world.
             
             The snow festival is staged on three sites: the Odori Site, Susukino Site and Tsu Dome Site.</p>
-            <button>Visit Cultural Spot</button>
-          </div>
-          <div id='sapporo-food'>
-            <h1>Curb Market</h1>
-            <img src='./src/Images/sapporo-curb-market.jpg'>
-            <p>Curb Market (札幌場外市場, Sapporo Jōgai Ichiba) consists of nearly 80 stores and restaurants lined up along several blocks
+        </div>
+        <div>
+          <h1>Curb Market</h1>
+          <img src='./src/Images/sapporo-curb-market.jpg'>
+          <p>Curb Market (札幌場外市場, Sapporo Jōgai Ichiba) consists of nearly 80 stores and restaurants lined up along several blocks
             just outside of Sapporo's Central Wholesale Market. One of the city's largest public markets, the Curb Market
             specializes in Hokkaido seafood such as crab, sea urchin, salmon roe, squid and scallops, and local produce such as
             corn, melons and potatoes when in season.
@@ -262,48 +264,54 @@
             The market's shops cater to both locals and tourists alike, and have a good selection at reasonable prices. Like other
             seafood markets around Japan, an excellent way to experience the market's offerings is to have a meal of fresh local
             seafood served over rice (domburi) at one of the local restaurants.</p>
-          <button>Visit Food Spot</button>
         </div>
-        <div id='saporo-history'>
+        <div>
+          <h1>Asahidake Onsen</h1>
+          <img src='./src/Images/hokkaido-asahidake-onsen.jpg'>
+          <p>Asahidake Onsen (旭岳温泉) is a small hot spring resort at the foot of Hokkaido's highest mountain, Mount Asahidake (2290
+          meters), and one of the most pleasant bases for exploring Daisetsuzan National Park.
+          
+          The small village consists of only about a dozen buildings, wooden lodges, a beautiful youth hostel and two or three
+          large hotels. Shopping and dining opportunities are limited to the hotels and the ropeway station. For weather
+          forecasts, maps, explanations about the national park and other tourist information, head to the Asahidake Visitor
+          Center near the ropeway station.
+          </p>
+        </div>
+      </div>
+      <div id='hokkaido-historical-list'>
+        <div>
           <h1>Historic Village of Hokkaido</h1>
           <img src='./src/Images/sapporo-historic-village-hokkaido.jpg'>
           <p>The Historic Village of Hokkaido (開拓の村, Kaitaku no Mura) is an open air museum in the suburbs of Sapporo. It exhibits
-          about 60 typical buildings from all over Hokkaido, dating from the Meiji and Taisho Periods (1868 to 1926), the era when
-          Hokkaido's development was carried out on a large scale. There are four different sections: a town, fishing village,
-          farm village and a mountain village.</p>
-          <button>Visit Historical Spot</button>
+            about 60 typical buildings from all over Hokkaido, dating from the Meiji and Taisho Periods (1868 to 1926), the era when
+            Hokkaido's development was carried out on a large scale. There are four different sections: a town, fishing village,
+            farm village and a mountain village.</p>
+        </div>
+        <div>
+          <h1>Fort Goryokaku</h1>
+          <img src='./src/Images/hakodate-Fort Goryokaku.jpg'>
+          <p>Fort Goryokaku (五稜郭, Goryōkaku) is a massive, star shaped, Western style citadel, which was built in the last years of
+            the Edo Period for the defense of Hakodate against the imperialist threat posed by the Western powers. A few years
+            later, the fort became the site of a civil war between an army of the shogunate and the superior troops of the newly
+            established Meiji government.
+            
+            After the fort had lost its military importance, it was eventually turned into a public park in the 1910s. Over one
+            thousand cherry trees were planted along its moats, making it one of Hokkaido's best cherry blossom spots. The peak of
+            the blooming season usually takes place around early May.</p>
+        </div>
+        <div>
+          <h1>Sapporo Beer Museum</h1>
+          <img src='./src/Images/hokkaido-sapporo-beer-garden-2.jpg'>
+          <p>Hokkaido is the birthplace of beer in Japan. Sapporo Beer, one of the oldest and most popular beer brands in the
+          country, has been brewed in Sapporo since 1877.
+          
+          The Sapporo Beer Museum (サッポロビール博物館, Sapporo Beer Hakubutsukan) was opened in 1987 in a former brewery from the Meiji
+          Period. The museum introduces the history of beer in Japan and the process of beer making. After the exhibitions, beer
+          tastings are available at a small fee. Alternatively, paid tours are held in Japanese that include a tasting session at
+          the end.</p>
         </div>
       </div>
-      <div id='furano-tourist-spot-list'>
-        <div>
-          <h1>Farm Tomita</h1>
-          <img src='./src/Images/furano-farm-tomita.jpg'>
-          <p>There are numerous flower fields of various sizes all across Furano. The best spot to view the lavender is Farm Tomita,
-          whose lavender and flower fields with the Tokachi mountain range as backdrop are spectacular. The popular farm is free
-          to enter and besides the flower fields has cafes and shops that sell a wide range of lavender related products. The farm
-          naturally gets rather busy during the peak season.</p>
-          <button>Visit Photo Spot</button>
-        </div>
-        <div>
-          <h1>Blue Pond</h1>
-          <img src='./src/Images/furano-biei-pond.jpg'>
-          <p>The Blue Pond (青い池, Aoiike) outside the hot spring town of Shirogane Onsen is named after is deep blue color which it
-          owes to natural minerals dissolved in the water. Not promoted as a tourist spot until recent years, the pond is part of
-          an erosion control system that was built to prevent damage to Biei in case of an eruption by nearby Mount Tokachidake.
-          </p>
-          <button>Visit Natural Spot</button>
-        </div>
-        <div>
-          <h1>Biei</h1>
-          <img src='./src/Images/furano-biei.jpg'>
-          <p>Biei (美瑛) is a small town surrounded by a picturesque landscape of gently rolling hills and vast fields. A pleasant way
-          to enjoy the charm of Biei is by cycling or driving through the hills and visiting some of the flower fields and famous
-          trees along the way. The area northwest of the town center is named "Patchwork Road" and the area south of the town
-          center "Panorama Road".</p>
-          <button>Visit Photo Spot</button>
-        </div>
-      </div>
-      <div id='hakodate-tourist-spot-list'>
+      <div id='hokkaido-picture-perfect-list'>
         <div>
           <h1>Mount Hakodate</h1>
           <img src='./src/Images/hakodate-mt-hakodate.jpg'>
@@ -311,566 +319,906 @@
           much of central Hakodate is located. On clear days and nights, in particular, the views from the mountain are
           spectacular and included among Japan's three best night views alongside the views from Nagasaki's Mount Inasa and Kobe's
           Mount Rokko.</p>
-          <button>Visit Cultural Spot</button>
         </div>
         <div>
-          <h1>Fort Goryokaku</h1>
-          <img src='./src/Images/hakodate-Fort Goryokaku.jpg'>
-          <p>Fort Goryokaku (五稜郭, Goryōkaku) is a massive, star shaped, Western style citadel, which was built in the last years of
-          the Edo Period for the defense of Hakodate against the imperialist threat posed by the Western powers. A few years
-          later, the fort became the site of a civil war between an army of the shogunate and the superior troops of the newly
-          established Meiji government.
-          
-          After the fort had lost its military importance, it was eventually turned into a public park in the 1910s. Over one
-          thousand cherry trees were planted along its moats, making it one of Hokkaido's best cherry blossom spots. The peak of
-          the blooming season usually takes place around early May.</p>
-          <button>Visit Food Spot</button>
+          <h1>Farm Tomita</h1>
+          <img src='./src/Images/furano-farm-tomita.jpg'>
+          <p>There are numerous flower fields of various sizes all across Furano. The best spot to view the lavender is Farm Tomita,
+          whose lavender and flower fields with the Tokachi mountain range as backdrop are spectacular. The popular farm is free
+          to enter and besides the flower fields has cafes and shops that sell a wide range of lavender related products. The farm
+          naturally gets rather busy during the peak season.</p>
         </div>
         <div>
-          <h1>Morning Market</h1>
-          <img src='./src/Images/hakodate-morning-market.jpg'>
-          <p>The Hakodate Morning Market (函館朝市, Hakodate Asaichi) is held daily from 5am (from 6am during winter) to noon, just a few
-          steps away from JR Hakodate Station. The market area spans about four city blocks.
-          
-          Products on sale include various types of fresh seafood such as crabs (kani), salmon eggs (ikura) and sea urchin (uni),
-          as well as fresh produce such as melons. Many restaurants can be found in the market area, offering fresh seafood
-          breakfasts, such as uni-ikura domburi.
+          <h1>Blue Pond</h1>
+          <img src='./src/Images/furano-biei-pond.jpg'>
+          <p>The Blue Pond (青い池, Aoiike) outside the hot spring town of Shirogane Onsen is named after is deep blue color which it
+            owes to natural minerals dissolved in the water. Not promoted as a tourist spot until recent years, the pond is part of
+            an erosion control system that was built to prevent damage to Biei in case of an eruption by nearby Mount Tokachidake.
           </p>
-          <button>Visit Food Spot</button>
         </div>
       </div>
     </div>
     <div id='tohoku-tourist-spots'>
-      <div id='akita-tourist-spot-list'>
+      <div id='tohoku-cultural-list'>
         <div>
           <h1>Kanto Festival</h1>
           <img src='./src/Images/AkitaKantoTop.jpg'>
           <p>The Kanto Matsuri (竿燈まつり, "pole lantern festival") is a Tanabata related celebration in Akita City, held every year from
-          August 3 to 6. The highlight of the festival is an impressive display of skill in which performers balance kanto (long
-          bamboo poles) with arrays of paper lanterns attached to the end. The Kanto Matsuri together with Aomori's Nebuta
-          Festival and Sendai's Tanabata makes up the three great festivals of the Tohoku Region.
-          
-          The kanto poles come in different sizes with the largest measuring 12 meters, weighing 50 kilograms and carrying as many
-          as 46 paper lanterns, lit by real candles. To the sound of drums, flutes and onlookers chanting "dokkoisho, dokkoisho",
-          each kanto is hoisted up by a single performer who balance them on end using various techniques. The performers change
-          every few minutes and gradually add extensions to the pole until the kanto are at their maximum height.</p>
-          <button>Visit Cultural Spot</button>
-        </div>
-        <div>
-          <h1>Kakunodate</h1>
-          <img src='./src/Images/akita-kakunodate.jpg'>
-          <p>Kakunodate (角館) is a former castle town and samurai stronghold in today's Akita Prefecture. While Kakunodate Castle no
-          longer remains, the town is famous for its samurai tradition and its hundreds of weeping cherry trees (shidarezakura).
-          
-          Apart from the loss of its castle, Kakunodate remains remarkably unchanged since its founding in 1620. The town was
-          built with two distinct areas, the samurai district and the merchant district. Once home to 80 families, the samurai
-          district still has some of the best examples of samurai architecture in all of Japan.
-          
-          Kakunodate is also well known as the location of one of the Tohoku Region's most popular cherry blossom spots. Around
-          late April and early May, large crowds of people come to see Kakunodate's special combination of pink blossoms and
-          historic homes.</p>
-          <button>Visit Historical Spot</button>
-        </div>
-        <div>
-          <h1>Hachimantai</h1>
-          <img src='./src/Images/akita-hachimantai.jpg'>
-          <p>Hachimantai (八幡平) is a mountainous region in northern Akita and Iwate Prefectures, which makes up the southern part of
-          the Towada-Hachimantai National Park. The region is far removed from Japan's cities and offers some of the country's
-          best rustic hot springs and volcanic landscapes that will delight travelers looking to explore the Japanese countryside.</p>
-          <button>Visit Food Spot</button>
-        </div>
-      </div>
-      <div id='aomori-tourist-spot-list'>
-        <div>
-          <h1>Nebuta Matsuri</h1>
-          <img src='./src/Images/nebutamatsuri.jpg'>
-          <p>Nebuta and Neputa are a type of Tanabata related summer festival held in towns around Aomori Prefecture. The largest of
-          these festivals is the Nebuta Matsuri (ねぶた祭) of Aomori City, held every year from August 2 to 7. The highlight of the
-          festival is the daily parade of enormous lantern floats, flanked by large taiko drums, musicians and dancers. The Nebuta
-          Matsuri together with Akita's Kanto Matsuri and Sendai's Tanabata make up the Tohoku Sandai Matsuri (Three Great
-          Festivals of the Tohoku Region).
-          
-          Local teams build the festival's two dozen floats, which are constructed of painted washi paper over a wire frame and
-          take an entire year to design and construct. They can be up to nine meters wide and five meters tall and often depict
-          gods, historical or mythical figures from both Japanese and Chinese culture, kabuki actors, and characters from the
-          popular NHK Taiga Drama historical TV series.</p>
-          <button>Visit Cultural Spot</button>
-        </div>
-        <div>
-          <h1>Shirakami Sanchi</h1>
-          <img src='./src/Images/aomori_shirakami_sanchi.jpg'>
-          <p>Shirakami Sanchi (白神山地) is an extensive mountain range straddling the border between Aomori and Akita prefectures in the
-          northern Tohoku Region of Japan. The central core of Shirakami Sanchi is made up of the last virgin beech forests in
-          Japan, for which the region was declared one of the country's first UNESCO World Heritage Sites in 1993.
-
-          One popular destination are the Juniko ("twelve lakes"), a series of small lakes and ponds connected by hiking
-          trails, on the north western side of Shirakami Sanchi along the coast of the Sea of Japan. The area offers scenic day
-          hiking, fishing, boating and camping around its lakes and ponds, one of which, Aoike, has enchanted looking, almost
-          unnaturally blue water. There is also a small visitor center, the Juniko Eco-Museum Center Kokyokan, that explains about
-          the area's beech forests.
-          </p>
-          <button>Visit Photo Spot</button>
-        </div>
-        <div>
-          <h1>Hirosaki Castle</h1>
-          <img src='./src/Images/nebuta_warasse.jpg'>
-          <p>During the Edo Period, Hirosaki (弘前) was the political and cultural capital of the Tsugaru Region, the western section
-          of present day Aomori Prefecture. The city remains one of the culturally richest cities in the northern Tohoku Region.
-          
-          Hirosaki developed around its castle, Hirosaki Castle. Several thousand cherry trees are planted around the castle
-          grounds, which become one of Japan's most spectacular cherry blossom spots typically from late April to early May.
-          </p>
-          <button>Visit Historical Spot</button>
-        </div>
-      </div>
-      <div id='sendai-tourist-spot-list'>
-        <div>
-          <h1>Gyutan</h1>
-          <img src='./src/Images/sendai-gyutan.jpg'>
-          <p>Sendai is the original home of gyutan (牛タン, gyūtan), a dish consisting of pieces of thinly sliced beef tongue, cooked
-          over a charcoal grill. Besides the standard version of grilled tongue and pickled vegetables seen above, gyutan is also
-          popular in donburi form, as a curry, or in a beef stew.
-          
-          The dish originated fairly recently in 1948 when a yakitori restaurant owner in Sendai devoted his business to the
-          preparation of beef tongue dishes. It has grown rapidly in popularity and spread throughout Japan.
-          
-          Common side dishes of gyutan are oxtail soup, and mugi gohan (steamed white rice with barley). In its donburi variety,
-          gyutan is served over a bowl of steamed white rice, while the curry gyutan is accompanied by rice as well.
-          
-          The two most popular gyutan restaurant chains are Rikyu and Kisuke. Both of these chains have branches on Gyutan Dori
-          (gyutan street) on third floor of Sendai Station. The restaurants of Gyutan Dori open their doors at 10:00 while most of
-          the city branch gyutan chains open for lunch around 11:00. Menus generally range in price from about 1000 yen to about
-          2000 yen.</p>
-          <button>Visit Food Spot</button>
+            August 3 to 6. The highlight of the festival is an impressive display of skill in which performers balance kanto (long
+            bamboo poles) with arrays of paper lanterns attached to the end. The Kanto Matsuri together with Aomori's Nebuta
+            Festival and Sendai's Tanabata makes up the three great festivals of the Tohoku Region.
+            
+            The kanto poles come in different sizes with the largest measuring 12 meters, weighing 50 kilograms and carrying as many
+            as 46 paper lanterns, lit by real candles. To the sound of drums, flutes and onlookers chanting "dokkoisho, dokkoisho",
+            each kanto is hoisted up by a single performer who balance them on end using various techniques. The performers change
+            every few minutes and gradually add extensions to the pole until the kanto are at their maximum height.</p>
         </div>
         <div>
           <h1>Sendai Tanabata Matsuri</h1>
           <img src='./src/Images/sendai-tanabata.jpg'>
           <p>Tanabata festivals, also known as "star festivals", are held across Japan on the 7th day of the 7th month of the year,
-          when, according to Chinese legend, the two stars Altair and Vega cross paths. Due to differences between the lunar
-          calendar and the solar calendar, modern tanabata festivals take place either in July or August.
-          
-          The Sendai Tanabata Matsuri (仙台七夕まつり), held every year on August 6-8, is one of the largest and most famous tanabata
-          celebrations in Japan. Together, with Akita's Kanto Matsuri and Aomori's Nebuta Matsuri, it makes up the Tohoku Sandai
-          Matsuri (Three Great Festivals of the Tohoku Region).
-          
-          While festivities take place throughout Downtown Sendai, the festival's main feature are thousands of colorful streamers
-          that decorate the city's shopping arcades, which come to resemble brightly colored forests. Each set of 3-5 meter long
-          streamers is handcrafted by local shops, schools and community groups out of washi paper and bamboo. They are then hung
-          from ten meter long bamboo poles along the arcades.</p>
-          <button>Visit Cultural Spot</button>
+            when, according to Chinese legend, the two stars Altair and Vega cross paths. Due to differences between the lunar
+            calendar and the solar calendar, modern tanabata festivals take place either in July or August.
+            
+            The Sendai Tanabata Matsuri (仙台七夕まつり), held every year on August 6-8, is one of the largest and most famous tanabata
+            celebrations in Japan.
+            
+            While festivities take place throughout Downtown Sendai, the festival's main feature are thousands of colorful streamers
+            that decorate the city's shopping arcades, which come to resemble brightly colored forests. Each set of 3-5 meter long
+            streamers is handcrafted by local shops, schools and community groups out of washi paper and bamboo. They are then hung
+            from ten meter long bamboo poles along the arcades.</p>
+        </div>
+        <div>
+          <h1>Three Great Noodles of Morioka</h1>
+          <img src='./src/Images/threegreatramen.jpg'>
+          <p>The "Three Great Noodles of Morioka" are Wanko Soba, Reimen and Jajamen.
+      
+          Each serving of Wanko Soba contains roughly a mouthful of soba noodles, and the server
+          will constantly keep topping up your empty bowl with more noodles until you indicate that you have had enough. The first
+          bowl is eaten plain to taste the flavor, and toppings can be added from the second bowl.
+
+          Morioka Reimen, as it is more popularly known outside of Morioka, was originally a Korean noodle dish. The
+          noodles are made of potato starch and flour. The broth is chilled and the dish has
+          toppings like sliced meat, kimchi, a slice of fruit (usually pear, apple or watermelon), half a hard boiled egg, and
+          cucumbers.
+
+          Jajamen has its origins in Chinese Zhajiangmian. It is now a variant of udon, are served dry with a scoop of meat miso, 
+          a handful of sliced green onions and sliced cucumbers, with ginger on the side. Mix the miso and noodles evenly before adding vinegar, 
+          chili oil or garlic to taste. After finishing the noodles, it is common to ask for "chitantan".
+          </p>
+        </div>
+      </div>
+      <div id='tohoku-historical-list'>
+        <div>
+          <h1>Hirosaki Castle</h1>
+          <img src='./src/Images/aomorihirosaki.jpg'>
+          <p>During the Edo Period, Hirosaki (弘前) was the political and cultural capital of the Tsugaru Region, the western section
+            of present day Aomori Prefecture. The city remains one of the culturally richest cities in the northern Tohoku Region.
+            
+            Hirosaki developed around its castle, Hirosaki Castle. Several thousand cherry trees are planted around the castle
+            grounds, which become one of Japan's most spectacular cherry blossom spots typically from late April to early May.
+          </p>
+        </div>
+        <div>
+          <h1>Kakunodate</h1>
+          <img src='./src/Images/akita-kakunodate.jpg'>
+          <p>Kakunodate (角館) is a former castle town and samurai stronghold in today's Akita Prefecture. While Kakunodate Castle no
+            longer remains, the town is famous for its samurai tradition and its hundreds of weeping cherry trees (shidarezakura).
+            
+            Apart from the loss of its castle, Kakunodate remains remarkably unchanged since its founding in 1620. The town was
+            built with two distinct areas, the samurai district and the merchant district. Once home to 80 families, the samurai
+            district still has some of the best examples of samurai architecture in all of Japan.
+            
+            Kakunodate is also well known as the location of one of the Tohoku Region's most popular cherry blossom spots. Around
+            late April and early May, large crowds of people come to see Kakunodate's special combination of pink blossoms and
+            historic homes.</p>
         </div>
         <div>
           <h1>Zuihoden Mausoleum</h1>
           <img src='./src/Images/sendai-zuihoden.jpg'>
           <p>Zuihoden (瑞鳳殿, Zuihōden) is the mausoleum of Date Masamune, one of the most powerful feudal lords of the Edo Period.
-          Masamune was the first in a long line of Date lords to rule over Sendai from Aoba Castle. His son and grandson, Date
-          Tadamune and Date Tsunamune, are entombed in nearby mausoleums, while other descendants are laid to rest in less
-          elaborate graves and tombs.
-          
-          Zuihoden was designed in the ornate style of the Momoyama Period. It features intricate woodwork and a rich variety of
-          vivid colors. Masamune's son and grandson are entombed in smaller mausoleums designed in the same style.
-          Massive cedar trees surround the paths in the area, and are meant to symbolize the long history of the Date clan.</p>
-          <button>Visit Historical Spot</button>
+            Masamune was the first in a long line of Date lords to rule over Sendai from Aoba Castle. His son and grandson, Date
+            Tadamune and Date Tsunamune, are entombed in nearby mausoleums, while other descendants are laid to rest in less
+            elaborate graves and tombs.
+            
+            Zuihoden was designed in the ornate style of the Momoyama Period. It features intricate woodwork and a rich variety of
+            vivid colors. Masamune's son and grandson are entombed in smaller mausoleums designed in the same style.
+            Massive cedar trees surround the paths in the area, and are meant to symbolize the long history of the Date clan.</p>
+        </div>
+      </div>
+      <div id='tohoku-picture-perfect-list'>
+        <div>
+          <h1>Hachimantai</h1>
+          <img src='./src/Images/akita-hachimantai.jpg'>
+          <p>Hachimantai (八幡平) is a mountainous region in northern Akita and Iwate Prefectures, which makes up the southern part of
+            the Towada-Hachimantai National Park. The region is far removed from Japan's cities and offers some of the country's
+            best rustic hot springs and volcanic landscapes that will delight travelers looking to explore the Japanese countryside.</p>
+        </div>
+        <div>
+          <h1>Shirakami Sanchi</h1>
+          <img src='./src/Images/aomori_shirakami_sanchi.jpg'>
+          <p>Shirakami Sanchi (白神山地) is an extensive mountain range straddling the border between Aomori and Akita prefectures in the
+            northern Tohoku Region of Japan. The central core of Shirakami Sanchi is made up of the last virgin beech forests in
+            Japan, for which the region was declared one of the country's first UNESCO World Heritage Sites in 1993.
+            
+            One popular destination are the Juniko ("twelve lakes"), a series of small lakes and ponds connected by hiking
+            trails, on the north western side of Shirakami Sanchi along the coast of the Sea of Japan. The area offers scenic day
+            hiking, fishing, boating and camping around its lakes and ponds, one of which, Aoike, has enchanted looking, almost
+            unnaturally blue water. There is also a small visitor center, the Juniko Eco-Museum Center Kokyokan, that explains about
+            the area's beech forests.
+          </p>
+        </div>
+        <div>
+          <h1>Yamadera</h1>
+          <img src='./src/Images/tohoku-yamadera.jpg'>
+          <p>Yamadera (山寺) is a scenic temple located in the mountains northeast of Yamagata City. The temple grounds extend high up
+            a steep mountainside, from where there are great views down onto the valley. The temple was founded over a thousand
+            years ago in 860 as a temple of the Tendai sect under the official name Risshakuji. Its popular name, Yamadera,
+            literally means "mountain temple" in Japanese.</p>
         </div>
       </div>
     </div>
     <div id='kanto-tourist-spots'>
-      <div id='tokyo-tourist-spot-list'>
+      <div id='kanto-cultural-list'>
+        <div>
+          <h1>Hakone Hot Springs</h1>
+          <img src='./src/Images/hakonehotsprings.jpg'>
+          <p>Hakone has been one of Japan's most popular hot spring resorts for centuries. Nowadays, more than a dozen springs
+            provide hot spring water to the many bath houses and ryokan in the Hakone region.
+            
+            Yumoto, at the entrance to the Hakone area near Odawara, is Hakone's most famous hot spring with a particularly long
+            history, high quality water and numerous baths and inns. Many more hot spring facilities are found across the hills and
+            valleys of Hakone and along the shores of Lake Ashi.
+            
+            Visitors can enjoy a hot spring bath in public bath houses or ryokan. Many ryokan open their baths not only to staying
+            guests but also to daytime visitors. While staying guests can use the baths for free, daytime visitors pay an admission
+            fee of typically between 500 and 2000 yen.</p>
+        </div>
+        <div>
+          <h1>Ramen Museum</h1>
+          <img src='./src/Images/kanagawa_ramen_museum.jpg'>
+          <p>The Shinyokohama Raumen Museum (新横浜ラーメン博物館, Shin Yokohama Ra-men Hakubutsukan) is a unique museum about ramen, a very
+          popular Japanese noodle dish which was originally introduced from China.
+          
+          In a gallery on the first floor, the Ramen Museum presents the history of ramen noodles in Japan, including the big
+          success of instant ramen. It displays the variety of noodles, soups, toppings and bowls used across Japan, and shows how
+          the noodles are made.</p>
+        </div>
+        <div>
+          <h1>Akihabara</h1>
+          <img src='./src/Images/kanto-akihabara-nightlife-scaled.jpg'>
+          <p>Akihabara (秋葉原), also called Akiba after a former local shrine, is a district in central Tokyo that is famous for its
+          many electronics shops. In more recent years, Akihabara has gained recognition as the center of Japan's otaku (diehard
+          fan) culture, and many shops and establishments devoted to anime and manga are now dispersed among the electronic stores
+          in the district. On Sundays, Chuo Dori, the main street through the district, is closed to car traffic from 13:00 to
+          18:00 (until 17:00 from October through March).</p>
+        </div>
+      </div>
+      <div id='kanto-historical-list'>
+        <div>
+          <h1>Toshogu Shrine</h1>
+          <img src='./src/Images/kanto-toshogu.jpg'>
+          <p>Toshogu Shrine (東照宮, Tōshōgū) is the final resting place of Tokugawa Ieyasu, the founder of the Tokugawa Shogunate that
+          ruled Japan for over 250 years until 1868. Ieyasu is enshrined at Toshogu as the deity Tosho Daigongen, "Great Deity of
+          the East Shining Light".
+          
+          The lavishly decorated shrine complex consists of more than a dozen buildings set in a beautiful forest. Countless wood
+          carvings and large amounts of gold leaf were used to decorate the buildings in a way not seen elsewhere in Japan, where
+          simplicity has been traditionally stressed in shrine architecture. Visitors may note that Toshogu contains both Shinto
+          and Buddhist elements. It was common for places of worship to contain elements of both religions until the Meiji Period
+          when Shinto was deliberately separated from Buddhism. Across the country, Buddhist elements were removed from shrines
+          and vice versa, but at Toshogu the two religions were so intermingled that the separation was not carried out
+          completely.</p>
+        </div>
+        <div>
+          <h1>Great Buddha of Kamakura</h1>
+          <img src='./src/Images/Great-Buddah-of-Kamakura.jpg'>
+          <p>The Great Buddha of Kamakura (鎌倉大仏, Kamakura Daibutsu) is a bronze statue of Amida Buddha, which stands on the grounds
+            of Kotokuin Temple. With a height of 11.4 meters, it has long been the second tallest bronze Buddha statue in Japan,
+            surpassed only by the statue in Nara's Todaiji Temple and some recent creations.
+            
+            The statue was cast in 1252 and originally located inside a large temple hall. However, the temple buildings were
+            destroyed multiple times by typhoons and a tsunami in the 14th and 15th centuries. So, since the late 15th century, the
+            Buddha has been standing in the open air.</p>
+        </div>
+        <div>
+          <h1>Kawagoe</h1>
+          <img src='./src/Images/kanto-kawagoe.jpg'>
+          <p>Kawagoe (川越) is located about 30 minutes by train from central Tokyo and is suitable as a day trip destination. Its main
+          street, lined with Kurazukuri (clay-walled warehouse-styled) buildings, retains an ambience reminiscent of an old town
+          from the Edo Period (1603-1867) and allows us to imagine the streets from past centuries. Thereby, Kawagoe became known
+          as "Little Edo".
+          
+          During the Edo Period, Kawagoe prospered as a supplier of commodities to Tokyo (then named Edo). As Kawagoe was an
+          important city to the capital for trade and strategic purposes, the shogun installed some of their most loyal men as
+          lords of Kawagoe Castle. Close ties ensued between the two cities and over the years, Kawagoe inherited many aspects of
+          the Edo culture and architecture.
+          
+          One of the most important temples in the Greater Tokyo area, Kitain Temple, is Kawagoe's other main attraction. It is
+          home to the only remaining structures of the former Edo Castle.</p>
+        </div>
+      </div>
+      <div id='kanto-picture-perfect-list'>
+        <div>
+          <h1>Ogasawara Islands</h1>
+          <img src='./src/Images/kanto-Ogasawara_Islands,_Tokyo,_Japan.jpg'>
+          <p>The Ogasawara Islands (小笠原諸島, Ogasawara Shotō), also known in English as the Bonin Islands, are a chain of volcanic
+            islands in the Pacific Ocean, about 1000 kilometers south and administratively part of Tokyo. The sole way to reach the
+            islands is by a weekly 24 hour ferry ride from Tokyo. Only the two largest islands, Chichijima (Father Island) and
+            Hahajima (Mother Island) are inhabited.
+          </p>
+        </div>
         <div>
           <h1>Tokyo Skytree</h1>
           <img src='./src/Images/tokyo-skytree.jpg'>
           <p>The Tokyo Skytree (東京スカイツリー) is a television broadcasting tower and landmark of Tokyo. It is the centerpiece of the
-          Tokyo Skytree Town in the Sumida City Ward, not far away from Asakusa. With a height of 634 meters (634 can be read as
-          "Musashi", a historic name of the Tokyo Region), it is the tallest structure in Japan and the second tallest in the
-          world at the time of its completion. A large shopping complex with aquarium is located at its base.
-        
-          The highlight of the Tokyo Skytree is its two observation decks which offer spectacular views out over Tokyo. The two
-          enclosed decks are located at heights of 350 and 450 meters respectively, making them the highest observation decks in
-          Japan and some of the highest in the world.</p>
-          <button>Visit Cultural Spot</button>
+            Tokyo Skytree Town in the Sumida City Ward, not far away from Asakusa. With a height of 634 meters (634 can be read as
+            "Musashi", a historic name of the Tokyo Region), it is the tallest structure in Japan and the second tallest in the
+            world at the time of its completion. A large shopping complex with aquarium is located at its base.
+            
+            The highlight of the Tokyo Skytree is its two observation decks which offer spectacular views out over Tokyo. The two
+            enclosed decks are located at heights of 350 and 450 meters respectively, making them the highest observation decks in
+            Japan and some of the highest in the world.</p>
         </div>
         <div>
-          <h1>Asakusa</h1>
-          <img src='./src/Images/tokyo-Asakusa.jpg'>
-          <p>Asakusa (浅草) is the center of Tokyo's shitamachi (literally "low city"), one of Tokyo's districts, where an atmosphere
-          of the Tokyo of past decades survives.
+          <h1>Sankeien Garden</h1>
+          <img src='./src/Images/kanto-sankeien-garden.jpg'>
+          <p>Sankeien (三溪園) is a spacious Japanese style garden in southern Yokohama which exhibits a number of historic buildings
+          from across Japan. There is a pond, small rivers, flowers and wonderful scrolling trails that make you think you are in
+          Kyoto rather than Yokohama.
           
-          Asakusa's main attraction is Sensoji, a very popular Buddhist temple, built in the 7th century. The temple is approached
-          via the Nakamise, a shopping street that has been providing temple visitors with a variety of traditional, local snacks
-          and tourist souvenirs for centuries.</p>
-          <button>Visit Cultural Spot</button>
-        </div>
-        <div>
-          <h1>Shibuya</h1>
-          <img src='./src/Images/tokyo-Shibuya.jpg'>
-          <p>Shibuya (渋谷) is one of the twenty-three city wards of Tokyo, but often refers to just the popular shopping and
-          entertainment area found around Shibuya Station. In this regard, Shibuya is one of Tokyo's most colorful and busy
-          districts, packed with shopping, dining and nightclubs serving swarms of visitors that come to the district everyday.
-          
-          Shibuya is a center for youth fashion and culture, and its streets are the birthplace to many of Japan's fashion and
-          entertainment trends. Over a dozen major department store branches can be found around the area catering to all types of
-          shoppers. Most of the area's large department and fashion stores belong to either Tokyu or Seibu, two competing
-          corporations.</p>
-          <button>Visit Photo Spot</button>
-        </div>
-      </div>
-      <div id='kanagawa-tourist-spot-list'>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
-        </div>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
-        </div>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
-        </div>
-      </div>
-      <div id='yokohama-tourist-spot-list'>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
-        </div>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
-        </div>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          The garden was built by Hara Sankei and opened to the public in 1904. Among the historic buildings exhibited in the park
+          are an elegant daimyo (feudal lord) residence, several tea houses and the main hall and three storied pagoda of Kyoto's
+          old Tomyoji Temple.</p>
         </div>
       </div>
     </div>
     <div id='chubu-tourist-spots'>
-      <div id='kanazawa-tourist-spot-list'>
+      <div id='chubu-cultural-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>SCMAGLEV and Railway Park</h1>
+          <img src='./src/Images/chuburailway.jpg'>
+          <p>Opened in 2011, the SCMAGLEV and Railway Park is the railway museum of Central Japan Railways (JR Central). The museum
+          seeks to educate visitors on the advances in high speed rail in Japan and displays a number of actual trains including
+          historic steam locomotives, world record setting experimental shinkansen (bullet train) and the latest magnetic
+          levitating trains (maglev).
+          
+          A collection of 39 retired train cars are displayed in the museum. Many of these can be entered or viewed from
+          underneath, and are accompanied by a host of exhibits explaining the different parts of the trains and all aspects of
+          their operation and maintenance. Another section of the museum is dedicated to maglev trains and JR Central's plans to
+          construct a maglev high speed link between Tokyo and Osaka.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Togakushi Shrine</h1>
+          <img src='./src/Images/chubu-togakushi+shrine+main+gate.jpg'>
+          <p>Togakushi Shrine (戸隠神社, Togakushi Jinja) consists of a lower, a middle and an upper shrine in the forested mountains
+          northwest of Nagano's city center. The shrines are related to an important story in Japanese mythology in which the Sun
+          Goddess hid herself in a cave in present day Takachiho on Kyushu after her brother had misbehaved, thereby bringing
+          darkness to the world.
+          
+          In order to get the sunlight back, the other deities tried to lure the Sun Goddess out of the cave by performing
+          spectacular dance performances in front of it. As the Sun Goddess took a peek out, one of the deities grabbed the cave's
+          stone door and threw it away to prevent her from hiding again. The stone door flew all the way to Togakushi in Nagano
+          Prefecture, which is also how the area got its name: Togakushi literally means "hiding door".</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Eiheiji Temple</h1>
+          <img src='./src/Images/chubu-fukui_eiheiji_temple_6_kankou.jpg'>
+          <p>Eiheiji (永平寺) is a large temple complex and active monastery standing on a cedar-covered slope in the mountains just
+          outside Fukui City. The temple was founded in 1244 by Dogen, the Buddhist scholar who introduced Soto Zen from China to
+          Japan in 1228. Eiheiji is one of two head temples of the Soto Sect of Zen Buddhism (the other was formerly Sojiji Temple
+          on the Noto Peninsula before its head functions were transferred to Yokohama).
+          
+          The sizable temple complex consists of over 70 buildings and structures which are connected to each other by covered
+          walkways that protect from the heavy snow seen in the region from December to March. The warmer months bring lush
+          vegetation to the temple grounds, which are especially beautiful from late October to early November when the autumn
+          colors typically peak.</p>
         </div>
       </div>
-      <div id='nagano-tourist-spot-list'>
+      <div id='chubu-historical-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Shirakawa-go</h1>
+          <img src='./src/Images/chubu-shirakawago.jpg'>
+          <p>The Shirakawa-go (白川郷, Shirakawagō) and neighboring Gokayama (五箇山) regions line the Shogawa River Valley in the remote
+          mountains that span from Gifu to Toyama Prefectures. Declared a UNESCO world heritage site in 1995, they are famous for
+          their traditional gassho-zukuri farmhouses, some of which are more than 250 years old.
+          
+          Gassho-zukuri means "constructed like hands in prayer", as the farmhouses' steep thatched roofs resemble the hands of
+          Buddhist monks pressed together in prayer. The architectural style developed over many generations and is designed to
+          withstand the large amounts of heavy snow that falls in the region during winter. The roofs, made without nails,
+          provided a large attic space used for cultivating silkworms.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Matsumoto Castle</h1>
+          <img src='./src/Images/chubu-matsumoto-castle.jpg'>
+          <p>Matsumoto Castle (松本城, Matsumotojō) is one of the most complete and beautiful among Japan's original castles. It is a
+          "hirajiro" - a castle built on plains rather than on a hill or mountain. Matsumoto Castle is unique for having both a
+          secondary donjon and a turret adjoined to its main keep. The castle structures, in combination with their characteristic
+          black wainscoting, give off an air of grandeur and poise.
+          
+          Matsumotojo's main castle keep and its smaller, second donjon were built from 1592 to 1614. Both these structures were
+          well-fortified as peace was not yet fully achieved at the time. In 1635, when military threats had ceased, a third,
+          barely defended turret and another for moon viewing were added to the castle.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Meiji Mura</h1>
+          <img src='./src/Images/chubu-meiji-mura.jpg'>
+          <p>Meiji Mura (明治村, meaning "Meiji Village") is one of Japan's several outstanding open air museums, displaying over sixty
+          buildings from the Meiji Period (1868-1912). This era followed the end of Japan's feudal age, and its architecture is
+          characterized by a strong influx of Western architecture.
+          
+          The theme park-like museum is located in Inuyama, one hour outside of Nagoya, in a vast wooded area next to Iruka Pond.
+          Meiji Mura is one of the most visited open air museums in Japan. It takes at least half a day to explore the spacious
+          museum grounds and cover all of its exhibits.</p>
         </div>
       </div>
-      <div id='toyama-tourist-spot-list'>
+      <div id='chubu-picture-perfect-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Kamikochi</h1>
+          <img src='./src/Images/chubu-kamikochi-2-1024x767.jpg'>
+          <p>Kamikochi (上高地, Kamikōchi) is a popular resort in the Northern Japan Alps of Nagano Prefecture, offering some of Japan's
+            most spectacular mountain scenery. It is open from mid/late April until November 15 and shuts down during winter. In
+            2021, Kamikochi is scheduled to be open from April 17 to November 15.
+            
+            Kamikochi is a roughly 15 kilometer long plateau in the Azusa River Valley, about 1500 meters above sea level. It is
+            surrounded by tall mountains, including Nishihotakadake (2909 m), Okuhotakadake (3190 m), Maehotakadake (3090 m) and the
+            active volcano Yakedake (2455 m).
+            
+            Part of the Chubu Sangaku National Park, Kamikochi has only been moderately developed with half a dozen hotels, a few
+            souvenir shops, mountain huts and hiking trails. Private cars are banned from Kamikochi, and access is only possible by
+            bus or taxi.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Kenrokuen Garden</h1>
+          <img src='./src/Images/chubu-kenrokuen.jpg'>
+          <p>Kenrokuen (兼六園) in Kanazawa is justifiably classified as one of Japan's "three most beautiful landscape gardens"
+          alongside Mito's Kairakuen and Okayama's Korakuen. The spacious grounds used to be the outer garden of Kanazawa Castle
+          and were constructed by the ruling Maeda family over a period of nearly two centuries. Opened to the public in 1871,
+          Kenrokuen features a variety of flowering trees which provide the garden with a different look for each season.
+
+          The name Kenrokuen literally means "Garden of the Six Sublimities", referring to spaciousness, seclusion, artificiality,
+          antiquity, abundant water and broad views, which according to Chinese landscape theory are the six essential attributes
+          that make up a perfect garden. A stroll around Kenrokuen will help with understanding this landscape theory as the
+          grounds are teeming with water features, bridges, teahouses, trees, flowers, stones, viewpoints and hidden nooks to
+          discover.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Mount Fuji</h1>
+          <img src='./src/Images/chubu-MTFUJI1219.jpg'>
+          <p>Mount Fuji (富士山, Fujisan) is with 3776 meters Japan's highest mountain. It is not surprising that the nearly perfectly
+            shaped volcano has been worshiped as a sacred mountain and experienced big popularity among artists and common people
+            throughout the centuries.
+            
+            Mount Fuji is an active volcano, which most recently erupted in 1707. It stands on the border between Yamanashi and
+            Shizuoka prefectures and can be seen from Tokyo and Yokohama on clear days.
+            
+            However, that clouds and poor visibility often block the view of Mount Fuji, and you have to consider yourself
+            lucky if you get a clear view of the mountain. Visibility tends to be better during the colder seasons of the year than
+            in summer, and in the early morning and late evening hours than during the middle of the day.
+            
+            If you want to enjoy Mount Fuji at a more leisurely pace and from a nice natural surrounding, you should head to the
+            Fuji Five Lake (Fujigoko) region at the northern foot of the mountain, or to Hakone, a nearby hot spring resort. Mount
+            Fuji is officially open for climbing during July and August via several routes.
+          </p>
         </div>
       </div>
     </div>
     <div id='kansai-tourist-spots'>
-      <div id='kyoto-tourist-spot-list'>
+      <div id='kansai-cultural-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Kobe Beef</h1>
+          <img src='./src/Images/kansai-kobe.jpg'>
+          <p>Kobe Beef is a prized Japanese delicacy and probably the most widely-known regional specialty food in Japan. It is one
+          of several breeds of Wagyu.
+          
+          Kobe Beef is distinguished as a tender, flavorful meat that is well marbled with fat. It is produced from pedigreed
+          Tajima breed cattle which were born and slaughtered in Hyogo Prefecture. Despite popular rumor, the cows are not usually
+          fed beer or massaged with sake. Once slaughtered, the meat must pass a series of requirements and only the highest
+          grades of meat with exceptionally high levels of fat marbling earn the Kobe Beef label, which is a strictly-guarded
+          trademark.
+          
+          Kobe Beef is usually served as steaks, shabu shabu (thin slices of meat quickly boiled in a broth) or sukiyaki (meat
+          slices simmered in a hot pot). One of the best ways to enjoy Kobe Beef is at a teppanyaki restaurant, where a chef
+          grills the meat on an iron plate in front of his guests.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Kinkakuji (Golden Pavilion)</h1>
+          <img src='./src/Images/kansai-kinkakuji.jpg'>
+          <p>Kinkakuji (金閣寺, Golden Pavilion) is a Zen temple in northern Kyoto whose top two floors are completely covered in gold
+            leaf. Formally known as Rokuonji, the temple was the retirement villa of the shogun Ashikaga Yoshimitsu, and according
+            to his will it became a Zen temple of the Rinzai sect after his death in 1408. Kinkakuji was the inspiration for the
+            similarly named Ginkakuji (Silver Pavilion), built by Yoshimitsu's grandson, Ashikaga Yoshimasa, on the other side of
+            the city a few decades later.
+            
+            Kinkakuji is an impressive structure built overlooking a large pond, and is the only building left of Yoshimitsu's
+            former retirement complex. It has burned down numerous times throughout its history including twice during the Onin War,
+            a civil war that destroyed much of Kyoto; and once again more recently in 1950 when it was set on fire by a fanatic
+            monk. The present structure was rebuilt in 1955.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Kiyomizudera Temple</h1>
+          <img src='./src/Images/kansai-kiyomizudera.jpg'>
+          <p>Kiyomizudera (清水寺, literally "Pure Water Temple") is one of the most celebrated temples of Japan. It was founded in 780
+            on the site of the Otowa Waterfall in the wooded hills east of Kyoto, and derives its name from the fall's pure waters.
+            The temple was originally associated with the Hosso sect, one of the oldest schools within Japanese Buddhism, but formed
+            its own Kita Hosso sect in 1965. In 1994, the temple was added to the list of UNESCO world heritage sites.
+            
+            Kiyomizudera is best known for its wooden stage that juts out from its main hall, 13 meters above the hillside below.
+            The stage affords visitors a nice view of the numerous cherry and maple trees below that erupt in a sea of color in
+            spring and fall, as well as of the city of Kyoto in the distance. The main hall, which together with the stage was built
+            without the use of nails, houses the temple's primary object of worship, a small statue of the eleven faced, thousand
+            armed Kannon.</p>
         </div>
       </div>
-      <div id='osaka-tourist-spot-list'>
+      <div id='kansai-historical-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Himeji</h1>
+          <img src='./src/Images/kansai-himeji.jpg'>
+          <p>Himeji (姫路) is most famous for its magnificent castle, Himeji Castle, widely considered to be Japan's most beautiful
+            surviving feudal castle. The castle is designated both a national treasure and a UNESCO world heritage site.
+            
+            With half a million inhabitants, Himeji is the second largest city of Hyogo Prefecture after Kobe. It can be reached in
+            less than one hour from Osaka or Kyoto and is also a popular stopover on journeys along the Sanyo Shinkansen.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Gion</h1>
+          <img src='./src/Images/kansai-gion.jpg'>
+          <p>Gion (祇園) is Kyoto's most famous geisha district, located around Shijo Avenue between Yasaka Shrine in the east and the
+            Kamo River in the west. It is filled with shops, restaurants and ochaya (teahouses), where geiko (Kyoto dialect for
+            geisha) and maiko (geiko apprentices) entertain.
+            
+            Gion attracts tourists with its high concentration of traditional wooden machiya merchant houses. Due to the fact that
+            property taxes were formerly based upon street frontage, the houses were built with narrow facades only five to six
+            meters wide, but extend up to twenty meters in from the street.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Higashiyama District</h1>
+          <img src='./src/Images/kansai-higashiyama.jpg'>
+          <p>The Higashiyama District (東山) along the lower slopes of Kyoto's eastern mountains is one of the city's best preserved
+          historic districts. It is a great place to experience traditional old Kyoto, especially between Kiyomizudera and Yasaka
+          Shrine, where the narrow lanes, wooden buildings and traditional merchant shops invoke a feeling of the old capital
+          city. Recent renovations to remove telephone poles and repave the streets have further improved the traditional feel of
+          the district.
+          
+          The streets in Higashiyama are lined by small shops, cafes and restaurants which have been catering to tourists and
+          pilgrims for centuries. These businesses retain their traditional design, although many have been renovated through the
+          years, and they continue to serve customers today, selling local specialties such as Kiyomizu-yaki pottery, sweets,
+          pickles, crafts and other souvenirs.</p>
         </div>
       </div>
-      <div id='nara-tourist-spot-list'>
+      <div id='kansai-picture-perfect-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Fushimi Inari Shrine</h1>
+          <img src='./src/Images/kansai-Fushimi-Inari-.jpg'>
+          <p>Fushimi Inari Shrine (伏見稲荷大社, Fushimi Inari Taisha) is an important Shinto shrine in southern Kyoto. It is famous for
+            its thousands of vermilion torii gates, which straddle a network of trails behind its main buildings. The trails lead
+            into the wooded forest of the sacred Mount Inari, which stands at 233 meters and belongs to the shrine grounds.
+            
+            Fushimi Inari is the most important of several thousands of shrines dedicated to Inari, the Shinto god of rice. Foxes
+            are thought to be Inari's messengers, resulting in many fox statues across the shrine grounds. Fushimi Inari Shrine has
+            ancient origins, predating the capital's move to Kyoto in 794.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Mount Yoshino</h1>
+          <img src='./src/Images/kansai-Mount-Yoshino.jpg'>
+          <p>Mount Yoshino (吉野山, Yoshinoyama), in Nara Prefecture, has been Japan's most famous cherry blossom viewing spot for many
+            centuries. It is said that the first trees were planted along its slopes more than 1300 years ago, and today the
+            mountain is covered by approximately 30,000 cherry trees of many different varieties, especially of the Yamazakura
+            variety.
+            
+            Rather than a free standing mountain, Yoshinoyama is a north-facing mountain slope. It is divided into four areas: the
+            Shimo Senbon (lower 1000 trees) at the base of the mountain, Naka Senbon (middle 1000 trees), Kami Senbon (upper 1000
+            trees) and Oku Senbon (inner 1000 trees) at the top of the mountain. Visitors can enjoy the cherry trees as they ascend
+            the mountain, passing Yoshino's touristy town with its various temples and shrines, and enjoying hanami in the parks and
+            viewpoints along the way.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Kokedera (Moss Temple)</h1>
+          <img src='./src/Images/Kyoto-kokedera.jpg'>
+          <p>Saihoji (西芳寺, Saihōji), more commonly known as Kokedera (苔寺), is one of Kyoto's Unesco World Heritage Sites. Entrance to
+          this temple requires a reservation made well in advance.
+          
+          Kokedera means Moss Temple, referring to the temple garden's estimated 120 different varieties of moss. Outside of
+          winter, visitors to the temple can walk through this spectacular garden, which has strongly influenced subsequent
+          Japanese garden design.
+          
+          Kokedera was originally the site of Prince Shotoku's villa before becoming a temple in the Nara Period. In 1339, the
+          temple was renovated and converted into a Zen temple under the priest Muso Soseki. Muso is also credited with creating
+          Kokedera's gardens.</p>
         </div>
       </div>
     </div>
     <div id='chugoku-tourist-spots'>
-      <div id='hiroshima-tourist-spot-list'>
+      <div id='chugoku-cultural-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Hagiyaki Pottery</h1>
+          <img src='./src/Images/chugoku-hagiyaki-pottery.jpg'>
+          <p>Hagiyaki Pottery (萩焼, Hagiyaki) is one of the most famous pottery types in Japan. The skills for making this craft was
+          imported into Japan from Korea in the early 1600s. Hagiyaki flourished during the Edo Period (1603-1867) and was highly
+          prized as tea wares for the tea ceremony.
+          
+          The color of Hagiyaki Pottery changes over time with use, as tea residuals enter the miniscule openings on its surface.
+          This characteristic is highly appreciated by tea enthusiasts. Hagiyaki Pottery remains popular to this day. Many shops
+          in town sell Hagiyaki tea wares, cup and bowls. Visitors can also view Hagiyaki Pottery at the museums listed below:
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Izumo Taisha</h1>
+          <img src='./src/Images/chugoku-Izumo-Taisha.jpg'>
+          <p>Izumo Taisha (出雲大社) is located in the city of Izumo in Shimane Prefecture, a one hour train ride west of Matsue. It is
+          one of Japan's most important shrines. There are no records of exactly when Izumo Taisha was built, but it is often
+          considered the oldest shrine in Japan, being already in existence in the early 700s as revealed by the nation's oldest
+          chronicles.
+          
+          Izumo used to be ruled by a powerful clan in pre-historic times, and the region plays a central role in Japan's creation
+          mythology. The main deity (kami) enshrined at Izumo Taisha is Okuninushi no Okami. According to the creation myths,
+          Okuninushi was the creator of the land of Japan and the ruler of Izumo. He also became known as the deity of good
+          relationships and marriage. Visitors consequently clap their hands four times instead of the usual two times during
+          their prayers: twice for themselves and twice for their actual or desired partners.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Itsukushima Shrine</h1>
+          <img src='./src/Images/chugoku-itsukushima.jpg'>
+          <p>The centuries-old Itsukushima Shrine (厳島神社, Itsukushima Jinja) on Miyajima is the source of both the island's fame and
+          its name. Formally named Itsukushima, the island is more popularly known as "Miyajima", literally "shrine island" in
+          Japanese, thanks to its star attraction. The shrine is known worldwide for its iconic "floating" torii gate.
+          
+          The shrine and its torii gate are unique for being built over water, seemingly floating in the sea during high tide. The
+          shrine complex consists of multiple buildings, including a prayer hall, a main hall and a noh theater stage, which are
+          connected by boardwalks and supported by pillars above the sea.
+          </p>
         </div>
       </div>
-      <div id='okayama-tourist-spot-list'>
+      <div id='chugoku-historical-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Kurashiki</h1>
+          <img src='./src/Images/chugoku-Kurashiki-Bikan-Historical-Quarter.jpg'>
+          <p>Kurashiki (倉敷) is located in Okayama Prefecture, not far from the prefectural capital of Okayama City. Kurashiki has a
+          preserved canal area that dates back to the Edo Period (1603-1867), when the city served as an important rice
+          distribution center. In fact, the name "Kurashiki" can be roughly translated as "town of storehouses" in reference to
+          the rice storehouses.
+          
+          Many of Kurashiki's former storehouses have been converted into museums, boutiques and cafes. The Ohara Museum is the
+          most impressive of Kurashiki's museums, exhibiting a large collection of works by famous Western artists. The canal area
+          is a ten minute walk from Kurashiki Station.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Peace Memorial Park</h1>
+          <img src='./src/Images/chugoku-Hiroshima-Peace-Memorial.jpg'>
+          <p>Hiroshima's Peace Memorial Park (平和記念公園, Heiwa Kinen Kōen) is one of the most prominent features of the city. Even
+          visitors not looking for it will likely stumble upon the large park of over 120,000 square meters. Its trees, lawns, and
+          walking paths are in stark contrast to the surrounding downtown area.
+          
+          Before the bomb, the area of what is now the Peace Park was the political and commercial heart of the city. For this
+          reason, it was chosen as the pilot's target. Four years to the day after the bomb was dropped, it was decided that the
+          area would not be redeveloped but instead devoted to peace memorial facilities.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Hiroshima Castle</h1>
+          <img src='./src/Images/chugoku-hiroshima-castle.jpg'>
+          <p>Hiroshima Castle (広島城, Hiroshimajō), also called the Carp Castle, is a good example of a castle built on a plain in the
+          center of a city as opposed to hilltop and mountaintop castles. Its main keep is five stories tall, and its grounds are
+          surrounded by a moat. Also within the castle's precincts are a shrine, some ruins and a few reconstructed buildings of
+          the Ninomaru (second circle of defense).
+          
+          Hiroshima developed as a castle town, whereby the castle was both the physical and economical center of the city. Built
+          in 1589 by the powerful feudal lord Mori Terumoto, Hiroshima Castle was an important seat of power in Western Japan.
+          While it was spared the demolishment that many other castles met during the Meiji Restoration, like the rest of the
+          city, Hiroshima Castle was destroyed by the atomic bomb in 1945.
+          </p>
         </div>
       </div>
-      <div id='yonago-tourist-spot-list'>
+      <div id='chugoku-picture-perfect-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Mount Misen</h1>
+          <img src='./src/Images/chugoku-mount-misen.jpg'>
+          <p>At 500 meters above sea level, Mount Misen (弥山) is the highest peak on Miyajima. On clear days, it affords spectacular
+            views of the Seto Inland Sea and as far as Hiroshima City. There are also a number of Buddhist structures near the peak.
+            A ropeway leads up the mountain from town, but it is also possible to climb up on foot.
+            
+            There are three hiking trails leading up Misen: the Momijidani Course, the Daisho-in Course and the Omoto Course. Of the
+            three, the Daisho-in Course offers the nicest views and is not as steep as the other two. The Momijidani Course, while
+            the shortest, is also the steepest, leading mostly through the forest. Using any course, it takes 1.5 to 2 hours to
+            reach the summit from town.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Shimanami Kaido</h1>
+          <img src='./src/Images/chugoku-shimanami-kaido.jpg'>
+          <p>The Shimanami Kaido (しまなみ海道, Shimanami Kaidō) is a 60 kilometer long toll road that connects Japan's main island of
+          Honshu to the island of Shikoku, passing over six small islands in the Seto Inland Sea. It is also known as the
+          Nishiseto Expressway. The Shimanami Kaido is the only one traversable by foot or bicycle.
+          
+          The Shimanami Kaido begins on Honshu in Onomichi City. It then leads across the six islands of Mukaishima, Innoshima,
+          Ikuchijima, Omishima, Hakatajima and Oshima, before terminating on Shikoku in Imabari City. Along the way, 
+          travelers can enjoy the beautiful scenery of the Seto Inland Sea and the islands' small towns.
+
+          Cycling is a popular means of experiencing the Shimanami Kaido. The bicycle route is well marked and maintained, and
+          diverges from the expressway on the islands. The ramps leading up to the bridges were built at small inclines with
+          cyclists in mind. At about 70 kilometers, the bike route is a bit longer than the toll road, but it can be comfortably completed in a day by intermediate cyclists.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Korakuen Garden</h1>
+          <img src='./src/Images/chugoku-okayama-korakuen-garden-161575.jpg'>
+          <p>Korakuen (後楽園, Kōrakuen) is a beautiful landscape garden and Okayama's main attraction. Along with Kanazawa's Kenrokuen
+          and Mito's Kairakuen, Korakuen is ranked as one of Japan's three best landscape gardens. It is located just beside
+          Okayama Castle, which can be seen from the garden as "borrowed scenery".
+          
+          The local feudal lord ordered the construction of Korakuen in 1687 as a place of entertainment for the ruling family and
+          a location for receiving important guests. Occasionally, the public was permitted to enter the garden.</p>
         </div>
       </div>
     </div>
     <div id='shikoku-tourist-spots'>
-      <div id='ehime-tourist-spot-list'>
+      <div id='shikoku-cultural-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Dogo Onsen Honkan</h1>
+          <img src='./src/Images/shikoku-dogo-onsen-honakn.jpg'>
+          <p>Dogo Onsen Honkan (道後温泉本館, Dōgo Onsen Honkan) is the symbol and main attraction of Dogo Onsen. The charismatic bath
+          house was built in 1894 during the Meiji Period. Its wooden interior is a maze of stairways, passages and rooms, usually
+          bustling with activity by staff and guests. Dogo Onsen Honkan is said to have served as inspiration for the
+          award-winning animated film "Spirited Away" by Miyazaki's Studio Ghibli.
+          
+          The Honkan offers two gender-separated, old-fashioned public baths made of stone. The main bath on the first floor is
+          called Kami no Yu (Bath of the Gods), while the smaller but more distinguished Tama no Yu (Bath of the Spirits) is on
+          the second floor. Large communal tatami rooms on the second floor and smaller private rooms on the third floor provide
+          bathers with space to rest and enjoy a snack. Four different admission plans provide visitors with varying levels of
+          access to the Honkan's facilities.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Kanamaruza Kabuki Theater</h1>
+          <img src='./src/Images/shikoku-Kanamaruza-kabuki-theatre.jpg'>
+          <p>Built in Kotohira in 1835, Kanamaruza Theater (金丸座) is Japan's oldest surviving, complete kabuki playhouse. From time to
+          time, it still stages kabuki performances, featuring some of the country's most popular kabuki stars.
+          
+          When no shows are held, the theater is open to visitors who can explore Kanamaruza's audience hall, stage, and dressing
+          rooms. Be sure to check out the basement to see the workings of the human powered rotating stage and trapdoors used by
+          actors to dramatically enter and exit performances.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
-        </div>
-      </div>
-      <div id='kagawa-tourist-spot-list'>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
-        </div>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
-        </div>
-        <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Awa Odori</h1>
+          <img src='./src/Images/shikoku-awa-odori-dance.jpg'>
+          <p>Tokushima City's Awa Odori (阿波おどり) is the most famous of many dance festivals held across Japan during the Obon season
+          in mid August. Awa is the former name for Tokushima Prefecture while Odori means dance.
+          
+          Between August 12 and 15, spectators and dancers come to Tokushima in the thousands to see this "Fool's Dance" whose
+          origins date back 400 years. This nickname comes from the lyrics to a common dance song, which translates as follows:
+          "Fools dance and fools watch, if both are fools, you might as well dance".</p>
         </div>
       </div>
-      <div id='kochi-tourist-spot-list'>
+      <div id='shikoku-historical-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Kochi Castle</h1>
+          <img src='./src/Images/shikoku-kochi.jpg'>
+          <p>Kochi Castle (高知城, Kōchijō) is one of just twelve Japanese castles to have survived the fires, wars and other
+          catastrophes of the post feudal age. It was first constructed between 1601 and 1611, but most of its main buildings date
+          from 1748 when they were reconstructed after a fire.
+          
+          The castle used to be the seat of the Yamauchi lords, who ruled over the surrounding region, then known as Tosa, during
+          the Edo Period. The castle buildings have since been designated "important cultural properties", and now house local
+          treasures and historical objects.
+          
+          A unique feature of Kochi's castle is that its main tower (donjon) was not only used for military purposes, but also as
+          a residence. In most other castles, the lords usually resided in separate palace buildings rather than in the castle
+          keep. The castle's wooden interior maintains the appearance of it Edo Period origins, and the lookout point from the
+          castle tower's top floor offers nice view of downtown.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Matsuyama Castle</h1>
+          <img src='./src/Images/shikoku-matsuyamajo1.jpg'>
+          <p>Matsuyama Castle (松山城, Matsuyamajō) is one of Japan's twelve "original castles", i.e. castles which have survived the
+          post-feudal era since 1868 intact. It is also one of the most complex and interesting castles in the country. It is
+          located on Mount Katsuyama, a steep hill in the city center that provides visitors with a bird's eye view of Matsuyama
+          and the Seto Inland Sea. There are about 200 cherry trees on the castle grounds, making this a lovely cherry blossom
+          spot typically around late March to early April each year.
+          
+          Matsuyama Castle was constructed between 1602 and 1628. In 1635, the castle got assigned to a branch of the Matsudaira
+          family, relatives of the nation ruling Tokugawa, and it remained in their hands until the end of the feudal era. The
+          current three storied castle tower was constructed in 1820 after the original five storied one had been destroyed by
+          lightning.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Marugame Castle</h1>
+          <img src='./src/Images/shikoku-Marugame_Castle.jpg'>
+          <p>Marugame Castle (丸亀城, Marugamejō), also known as Kameyama Castle, is a hilltop castle in Marugame City. Situated high up
+          on steep stone walls, the castle has a commanding view of the city below and overlooks one of the narrowest parts of the
+          Seto Inland Sea, a feature which afforded it control over the main shipping lanes of the region. Marugame Castle is one
+          of only twelve castles remaining in Japan that have survived the post feudal ages (since 1868) with their keep buildings
+          intact.
+          
+          Marugame Castle was originally constructed from 1597 to 1602 by Ikoma Chikamasa, the feudal lord who also built Tamamo
+          Castle in nearby Takamatsu. However, due to a new policy by the shogun that limited the number of castles per province
+          to just one, Marugame Castle was torn down again just 13 years after its completion. The castle was rebuilt in 1660
+          after the province had been split into two. Over the centuries many of the castle buildings were destroyed by fires, and
+          now only the original keep and several of the castle gates remain.</p>
+        </div>
+      </div>
+      <div id='shikoku-picture-perfect-list'>
+        <div>
+          <h1>Iya Valley</h1>
+          <img src='./src/Images/shikoku-iya-valley.jpg'>
+          <p>The Iya Valley (祖谷渓, Iyakei) is a remote, mountainous valley in western Tokushima Prefecture. Located deep in the heart
+          of Shikoku Island, the secluded valley is characterized by steep mountain slopes and deep rocky gorges which were
+          traditionally crossed by vine bridges. Three of the vine bridges, Iya Kazurabashi and the Oku-Iya Kazurabashi bridges,
+          are maintained to this day and remain some of the most popular attractions of the area. Iya is also well known for its
+          hot springs and outdoor activities.
+          
+          Due to its remoteness, the valley has served as a refuge for members of the Taira Clan (also known as Heike) who escaped
+          to the region after losing the Gempei War (1180-1185) at the end of the Heian Period. Their descendants can still be
+          found hundreds of years later around the Iya Valley and in other remote regions of Japan such as Shirakawago,
+          Yunishigawa, and the Noto Peninsula.</p>
+        </div>
+        <div>
+          <h1>Naoshima</h1>
+          <img src='./src/Images/shikoku-naoshima.jpg'>
+          <p>Naoshima (直島) is an island in the Seto Inland Sea that is known for its modern art museums, architecture and sculptures.
+          Part of Kagawa Prefecture, the island with its Mediterranean atmosphere, sandy beaches and sunny weather, combined with
+          a laid back, rural feel is a relaxing getaway from Japan's large urban areas such as Tokyo and Osaka.
+          
+          Much of Naoshima's art was installed by the Benesse Corporation, which oversees art museums, installations and
+          sculptures both on Naoshima and on neighboring islands. Benesse's museums were designed by the well known Japanese
+          architect Ando Tadao and include the Chichu Art Museum, Lee Ufan Museum and all the buildings of the Benesse House. In
+          addition, Naoshima's municipal buildings and schools were designed by the modern architect Ishii Kazuhiro. The island
+          serves as a main venue of the Setouchi Triennale art festival.
+          </p>
+        </div>
+        <div>
+          <h1>Ritsurin Koen</h1>
+          <img src='./src/Images/shikoku-Ritsuin-Garden.jpg'>
+          <p>Ritsurin Koen (栗林公園) is a landscape garden in Takamatsu City, built by the local feudal lords during the early Edo
+          Period. Considered one of the best gardens in Japan, it is often suggested that Ritsurin Koen deserves a spot on the
+          list of the "three most beautiful gardens of Japan" alongside Kanazawa's Kenrokuen, Mito's Kairakuen, and Okayama's
+          Korakuen.
+          
+          The spacious park features many ponds, hills, historic trees and beautiful pavilions divided into a Japanese style
+          garden in the south and western style garden in the north. The gardens are set in front of wooded Mt. Shiun which serves
+          as a wonderful background and great example of borrowed scenery.</p>
         </div>
       </div>
     </div>
     <div id='kyushu-tourist-spots'>
-      <div id='nagasaki-tourist-spot-list'>
+      <div id='kyushu-cultural-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Kurokawa Onsen</h1>
+          <img src='./src/Images/kyushu-kurokawa-onsen.jpg'>
+          <p>Kurokawa Onsen (黒川温泉) is one of Japan's most attractive hot spring towns, located in the middle of Kyushu about 20
+          kilometers north of Mount Aso. Well coordinated efforts by the town to maintain a pleasant, traditional atmosphere have
+          kept Kurokawa free of the massive concrete hotels, neon advertisements and loud colors that are encountered in many of
+          Japan's other resort towns.
+          
+          Instead, Kurokawa's townscape is dominated by natural colors and materials, wooden buildings, earthen walls, stone
+          stairs and a river flowing through. The town center, located in a forested valley, is compact and easily explored on
+          foot, except for a few ryokan which are located less centrally.
+          
+          The town's lanes are lined by ryokan, public bath houses, attractive shops and cafes, a small shrine and bridges that
+          lead over the river directly to ryokan entrances. A walk through town is particularly enjoyable in yukata and geta
+          sandals provided by one's ryokan. An information center, where maps and other information can be obtained, is also found
+          in the town center.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Beppu Hot Spring Baths (Onsen)</h1>
+          <img src='./src/Images/kyushu-beppu-onsen.jpg'>
+          <p>Beppu is one of the most famous hot spring resorts in Japan. The city is blessed by as many as eight different springs,
+          named Beppu Onsen, Kannawa Onsen, Myoban Onsen, Kankaiji Onsen, Hamawaki Onsen, Kamegawa Onsen, Horita Onsen and
+          Shibaseki Onsen, each featuring public baths and ryokan with bathing facilities. Together they produce more hot spring
+          water than any other onsen resort in the country.
+          
+          What sets Beppu apart from other onsen resorts is not only its abundance of thermal waters, but also the wide range of
+          bath types that can be enjoyed there. Aside from conventional hot water baths, Beppu offers sand baths where bathers are
+          buried in naturally heated sand, steam baths that are heated by the steam of a hot spring, and mud baths which are
+          basically muddy hot water baths.
+          </p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Food Stalls (Yatai)</h1>
+          <img src='./src/Images/kyushu-yatai-food-stands-nakasu-district-fukuoka..jpg'>
+          <p>Fukuoka's open air food stands (屋台, Yatai) are possibly the city's best known symbol. Yatai can generally seat about
+          seven or eight people and provide an atmospheric outdoor environment to enjoy various foods. 
+          There are dozens of yatai scattered across Fukuoka, but the best place to find them is on the southern end
+          of Nakasu Island.
+          
+          Typical dishes enjoyed at yatai are grilled chicken skewers (yakitori), hot pot (oden) and most famously Hakata Ramen, a
+          local noodle dish featuring relatively thin ramen noodles in a pork bone based soup (tonkotsu). Various alcoholic drinks
+          are also available, and help make the yatai a great place to get in touch with the locals, although many of the "locals"
+          happen to be Japanese tourists visiting Fukuoka from other parts of Japan.
+          
+          Yatai are typically open from around 6pm to around 2am, except when the weather is very bad. Many stands close one day
+          of the week. The closure day varies from stand to stand, but is often Sunday. There can be waiting times for popular
+          stands, especially on Fridays and Saturdays.
+          </p>
         </div>
       </div>
-      <div id='kagoshima-tourist-spot-list'>
+      <div id='kyushu-historical-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Chiran Samurai District</h1>
+          <img src='./src/Images/kyushu-chiran.jpg'>
+          <p>Chiran (知覧) is a small town in the middle of the Satsuma Peninsula in Kagoshima Prefecture. Within the town there is a
+          preserved samurai district with houses and gardens that date back about 250 years. Chiran's isolated location at the
+          southern end of Kyushu has allowed the district to keep much of its historical character intact.
+          
+          The preserved samurai district consists of a 700 meter long street within downtown Chiran that runs parallel to the main
+          thoroughfare. The street itself is very attractive, with the rock walls and hedges of residences and the forested
+          hillsides in the distance. Unlike some other samurai districts, it is also free of telephone poles and parked cars that
+          would detract from the historic atmosphere.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Kumamoto Castle</h1>
+          <img src='./src/Images/kyushu-kumamoto.jpg'>
+          <p>Kumamoto Castle (熊本城, Kumamotojō) is one of the most impressive castles in Japan. With large castle grounds and a
+            variety of buildings, Kumamoto Castle offers its visitors one of the most complete castle experiences in Japan.
+            
+            Only a few structures have survived the centuries since the castle's construction in 1607 intact. The castle keep and
+            most other buildings are modern reconstructions, but the reconstructions are mostly of a high quality and new buildings
+            are continually being added. With about 800 cherry trees, the castle becomes a popular cherry blossom spot usually in
+            late March and early April.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>The Nagasaki Peace Park</h1>
+          <img src='./src/Images/kyushu-nagasaki-peace-park.jpg'>
+          <p>The Nagasaki Peace Park (平和公園, Heiwa Kōen) is a tranquil space that commemorates the atomic bombing of Nagasaki on
+          August 9, 1945, which destroyed a significant portion of the city and killed tens of thousands of inhabitants. The
+          complex is comprised of two parks and a memorial museum.
+          
+          In the center of the complex is the Hypocenter Park with a simple, black monolith that marks the explosion's epicenter.
+          Not far from it stands a damaged pillar of the former Urakami Cathedral which was destroyed in the blast. Furthermore,
+          there is an area that allows visitors to take a look at a layer of soil below the park's surface where broken roof
+          tiles, bricks and pieces of glass remain from the explosion.
+          </p>
         </div>
       </div>
-      <div id='okinawa-tourist-spot-list'>
+      <div id='kyushu-picture-perfect-list'>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Cultural Spot</button>
+          <h1>Takachiho Gorge</h1>
+          <img src='./src/Images/kyushu-Takachiho Gorge.jpg'>
+          <p>Takachiho Gorge (高千穂峡, Takachiho-kyō) is a narrow chasm cut through the rock by the Gokase River. The nearly sheer
+          cliffs lining the gorge are made of slow forming volcanic basalt columns which resemble the scales of a dragon where the
+          stone twisted and flowed as it formed.
+          
+          Partway along the gorge is the 17 meter high Minainotaki waterfall cascading down to the river below, and it is truly
+          impressive to see the waterfall against a backdrop of dense green foliage and the surrounding grey cliffs.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Yakushima</h1>
+          <img src='./src/Images/kyushu-yakushima.jpg'>
+          <p>Yakushima (屋久島) is a subtropical island off the southern coast of Kyushu and part of Kagoshima Prefecture. It is covered
+            by an extensive cedar forest that contains some of Japan's oldest living trees. Trees more than 1000 years old are
+            affectionately called yakusugi (a combination of Yakushima and sugi, the Japanese word for cedar), the most ancient of
+            which may be over 7000 years old.
+                
+            As a subtropical island with nearly 2000 meter high mountains, Yakushima attracts a lot of rainfall around the year,
+            with a local saying claiming that it rains "35 days a month". While that may be an exaggeration, there is some rain
+            almost on a daily basis, especially in the mountainous interior, although the rain can also be light and limited to
+            short periods of time. In higher elevations the precipitation falls as snow during the winter months.</p>
         </div>
         <div>
-          <h1></h1>
-          <img src='./src/Images/'>
-          <p></p>
-          <button>Visit Food Spot</button>
+          <h1>Okinawa Island</h1>
+          <img src='./src/Images/kyushu-okinawa.jpg'>
+          <p>The center of the former Ryukyu Kingdom, Okinawa Main Island (沖縄本島, Okinawa Hontō) is by far the largest and most
+          populous island in Okinawa Prefecture and the regional transportation hub. The prefectural capital Naha and most of the
+          US military bases are located on Okinawa Honto.
+          
+          While much of the central part of Okinawa Honto is urbanized, the southern tip of the island is less densely populated,
+          and the northernmost Yambaru area remains mainly covered by forested hills and small fishing and farming villages.</p>
         </div>
       </div>
     </div>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
-  
+
+  <div id='end-modal'>
+    <div id='end-inner-box'>
+      <h1>Thank you for traveling with us! We hope your travel dreams have been fulfilled!</h1>
+      <button id='end-modal-button'>Travel Back To Japan</button>
+    </div>
+  </div>
+
   <script src="./dist/main.js"></script>
 </body>
-  </html>
+</html>

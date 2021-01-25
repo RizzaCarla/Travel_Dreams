@@ -1,0 +1,37 @@
+#end-modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#end-inner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  color: black;
+  background-color: pink;
+  cursor: pointer;
+  
+  text-align: center;
+  padding: 2%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+#end-modal h1 {
+  margin-bottom: 20px;
+}
+
+#end-modal button {
+  color: black;
+  background-color: gold;
+  border: none;
+  padding: 5px 15px;
+}
