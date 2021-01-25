@@ -22,7 +22,7 @@
 #kyushu-cultural-list,
 #kyushu-historical-list,
 #kyushu-picture-perfect-list {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -55,7 +55,7 @@
 #kyushu-cultural-list div,
 #kyushu-historical-list div,
 #kyushu-picture-perfect-list div {
-  width: 33%;
+  width: 400px;
 }
 
 #hokkaido-cultural-list img,
