@@ -15,7 +15,6 @@
   
   color: black;
   background-color: pink;
-  cursor: pointer;
   
   text-align: center;
   padding: 2%;
@@ -34,4 +33,5 @@
   background-color: gold;
   border: none;
   padding: 5px 15px;
+  cursor: pointer;
 }

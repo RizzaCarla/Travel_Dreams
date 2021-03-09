@@ -22,7 +22,7 @@
   position: relative;
   width: 30%;
   left: 60%;
-  top: -8%;
+  top: -7.5%;
   z-index: 8;
 }
 
@@ -30,7 +30,7 @@
   position: relative;
   width: 15%;
   left: 27.3%;
-  top: 20%;
+  top: 20.2%;
   transform: rotate(1deg);
   filter: opacity(55%);
   z-index: 7;
@@ -50,7 +50,7 @@
   position: relative;
   width: 12%;
   left: 8%;
-  top: 46.77%;
+  top: 46.40%;
   filter: opacity(55%);
   transform: rotate(0.5deg);
   z-index: 6;
@@ -70,7 +70,7 @@
   position: relative;
   width: 20%;
   left: 16.5%;
-  top: -5.5%;
+  top: -4.7%;
   filter: opacity(55%);
   z-index: 3;
 }

@@ -5,11 +5,6 @@ const backButton = document.getElementById('back-button')
 const mapOfJapan = document.getElementsByClassName('map-of-japan');
 const regionInfo = document.getElementById('region-info')
 
-regionPage.addEventListener('click', (e) => {
-  backButton.style.display = 'block'
-  homeButton.style.display = 'block'
-})
-
 homeButton.addEventListener('click', (e) => {
   itinerary.style.display = 'none';
   
