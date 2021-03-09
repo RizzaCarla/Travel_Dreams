@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 #start-inner-box {
@@ -65,4 +66,18 @@ h1 > i {
 
 #starting-modal-button:hover {
   cursor: pointer;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+#footer > p {
+  margin: 20px;
+  /* padding: 20px; */
 }
