@@ -8,10 +8,15 @@ const kansaiButton = document.getElementById('kansai-region-button')
 const chugokuButton = document.getElementById('chugoku-region-button')
 const shikokuButton = document.getElementById('shikoku-region-button')
 const kyushuButton = document.getElementById('kyushu-region-button')
+const homeButton = document.getElementById('go-home-button')
+const backButton = document.getElementById('back-button')
 
 hokkaidoButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
   itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+
   document.getElementById('hokkaido-prefecture-list').style.display = 'flex';
   document.getElementById('hokkaido-prefecture-list').style.justifyContent = 'center';
   document.getElementById('hokkaido-prefecture-list').style.flexDirection = 'column';
@@ -28,7 +33,10 @@ hokkaidoButton.addEventListener('click', (e) => {
 
 tohokuButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+
   document.getElementById('tohoku-prefecture-list').style.display = 'flex';
   document.getElementById('tohoku-prefecture-list').style.justifyContent = 'center';
   document.getElementById('tohoku-prefecture-list').style.flexDirection = 'column';
@@ -45,7 +53,10 @@ tohokuButton.addEventListener('click', (e) => {
 
 kantoButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+
   document.getElementById('kanto-prefecture-list').style.display = 'flex';
   document.getElementById('kanto-prefecture-list').style.justifyContent = 'center';
   document.getElementById('kanto-prefecture-list').style.flexDirection = 'column';
@@ -62,7 +73,10 @@ kantoButton.addEventListener('click', (e) => {
 
 chubuButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+
   document.getElementById('chubu-prefecture-list').style.display = 'flex';
   document.getElementById('chubu-prefecture-list').style.justifyContent = 'center';
   document.getElementById('chubu-prefecture-list').style.flexDirection = 'column';
@@ -79,7 +93,10 @@ chubuButton.addEventListener('click', (e) => {
 
 kansaiButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+
   document.getElementById('kansai-prefecture-list').style.display = 'flex';
   document.getElementById('kansai-prefecture-list').style.justifyContent = 'center';
   document.getElementById('kansai-prefecture-list').style.flexDirection = 'column';
@@ -96,7 +113,9 @@ kansaiButton.addEventListener('click', (e) => {
 
 chugokuButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
 
   document.getElementById('chugoku-prefecture-list').style.display = 'flex';
   document.getElementById('chugoku-prefecture-list').style.justifyContent = 'center';
@@ -114,7 +133,10 @@ chugokuButton.addEventListener('click', (e) => {
 
 shikokuButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+
   document.getElementById('shikoku-prefecture-list').style.display = 'flex';
   document.getElementById('shikoku-prefecture-list').style.justifyContent = 'center';
   document.getElementById('shikoku-prefecture-list').style.flexDirection = 'column';
@@ -131,7 +153,10 @@ shikokuButton.addEventListener('click', (e) => {
 
 kyushuButton.addEventListener('click', (e) => {
   regionPage.style.display = 'none';
-  itinerary.style.display = 'block'
+  itinerary.style.display = 'block';
+  backButton.style.display = 'block';
+  homeButton.style.display = 'block';
+  
   document.getElementById('kyushu-prefecture-list').style.display = 'flex';
   document.getElementById('kyushu-prefecture-list').style.justifyContent = 'center';
   document.getElementById('kyushu-prefecture-list').style.flexDirection = 'column';

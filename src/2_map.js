@@ -1,4 +1,4 @@
-//licking on regionn
+//clicking on region
 document.getElementById('hokkaido-region').addEventListener("click", function () {
   const bodyRect = document.body.getBoundingClientRect()
   const elemRect = document.getElementById('hokkaido-info').getBoundingClientRect()

@@ -5,6 +5,9 @@ const regionInfo = document.getElementById('region-info')
 const startingModal = document.getElementById('starting-modal');
 const regionPage = document.getElementById('region-page')
 
+const backButton = document.getElementById('back-button');
+const goHomeButton = document.getElementById('go-home-button')
+
 startingModalButton.addEventListener('click', (e) => {
   startingModal.style.display = "none";
   document.body.style.backgroundColor = "white";
@@ -13,5 +16,8 @@ startingModalButton.addEventListener('click', (e) => {
   }
   regionInfo.style.display = "block";
   regionPage.style.display = 'block';
+
+  backButton.style.display = 'none';
+  goHomeButton.style.display = 'none';
   
 })
