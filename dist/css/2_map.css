@@ -106,3 +106,27 @@
 #kyushu-region:hover {
   cursor: pointer;
 }
+
+#footer-in-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+}
+
+
+#footer-in-map > p:first-child {
+  /* padding: 20px; */
+  width: 200px;
+  /* padding: 20px; */
+}
+
+#footer-in-map > p {
+  margin: 20px;
+  width: 50px;
+  /* padding: 20px; */
+}
